@@ -1,0 +1,15 @@
+<% if flash.any? %>
+  <div class="container-fluid">
+    <div class="row">
+      <%- mappings = {'error' => 'danger', 'success' => 'success', 'alert' =>  'danger', 'notice' => 'success'} %>
+      <% flash.each do |key, value| -%>
+        <div role="alert" class="alert alert-<%= mappings[key] %>">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <%= value %>
+        </div>
+      <% end -%>
+    </div>
+  </div>
+<% end %>

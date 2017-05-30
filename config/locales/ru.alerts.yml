@@ -1,0 +1,82 @@
+ru:
+  flash:
+    actions:
+      approve:
+        success: "%{resource_name} был успешно принят."
+      decline:
+        success: "%{resource_name} был успешно отклонен."
+      create:
+        success: "%{resource_name} был успешно создан."
+        error: "%{resource_name} невозможно coздать."
+      update:
+        success: "%{resource_name} был успешно обновлен."
+        error: "%{resource_name} невозможно обновить."
+      destroy:
+        success: "%{resource_name} был успешно удален."
+        error: "%{resource_name} невозможно удалить."
+    reviews:
+      create:
+        success: "%{resource_name} был успешно создан."
+        error: "%{resource_name} не может быть coздан."
+      update:
+        success: "%{resource_name} был успешно отправлен на рассмотрение."
+        error: "%{resource_name} не может быть обновлен."
+    purchase_prices:
+      create:
+        success: "%{resource_name} была успешно создана."
+        error: "%{resource_name} не может быть coздана."
+      update:
+        success: "%{resource_name} была успешно обновлена."
+        error: "%{resource_name} не может быть обновлена."
+      destroy:
+        success: "%{resource_name} была успешно удалена."
+        error: "%{resource_name} не может быть удалена."
+    companies:
+      create:
+        success: "%{resource_name} была успешно создана."
+        error: "%{resource_name} не может быть coздана."
+      update:
+        success: "%{resource_name} была успешно обновлена."
+        error: "%{resource_name} не может быть обновлена."
+      destroy:
+        success: "%{resource_name} была успешно удалена."
+        error: "%{resource_name} не может быть удалена."
+    users:
+      registrations:
+        create:
+          success: "Добро пожаловать. Вы успешно зарегистрировались."
+          error: "Невозможно зарегистрироваться."
+        update:
+          success: "Ваш профиль был успешно обновлен."
+          error: "Ваш профиль не может быть обновлен."
+      sessions:
+        create:
+          success: "Вход успешно выполнен."
+          error: "Неверный логин или пароль."
+        destroy: 
+          success: "Выход успешно выполнен."
+      passwords:
+        create:
+          success: "Письмо с инструкцией по восстановлению пароля отправлено."
+          error: "Пользователь не найден."
+    admin:
+      categories:
+        create:
+          success: "%{resource_name} была успешно создана."
+          error: "%{resource_name} не может быть coздана."
+        update:
+          success: "%{resource_name} была успешно обновлена."
+          error: "%{resource_name} не может быть обновлена."
+        destroy:
+          success: "%{resource_name} была успешно удалена."
+          error: "%{resource_name} не может быть удалена."
+      companies:
+        create:
+          success: "%{resource_name} была успешно создана."
+          error: "%{resource_name} не может быть coздана."
+        update:
+          success: "%{resource_name} была успешно обновлена."
+          error: "%{resource_name} не может быть обновлена."
+        destroy:
+          success: "%{resource_name} была успешно удалена."
+          error: "%{resource_name} не может быть удалена."

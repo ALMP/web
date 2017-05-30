@@ -1,0 +1,14 @@
+.container
+  .row
+    .col-sm-12
+      .w-100
+        = render 'companies/search'
+  .row
+    .col-sm-8.col-xs-12
+      .card.border-top-0
+        .card-block
+          h1.text-warning= t('.title')
+          - interval = @categories.pagination_interval
+          = page_entries_info @categories
+          = render collection: @categories, partial: 'categories/category'
+          .pull-right= paginate @categories

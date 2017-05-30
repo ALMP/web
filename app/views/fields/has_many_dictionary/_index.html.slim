@@ -1,0 +1,4 @@
+- names = field.data.map do |resource|
+  - link_to field.send(:associated_dashboard).display_resource(resource), [namespace, resource]
+= auto_link names.join(", ")
+

@@ -1,0 +1,19 @@
+.attribute-label {
+  @include data-label;
+  @include span-columns(2 of 12);
+  clear: left;
+  margin-top: 0;
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+.preserve-whitespace {
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.attribute-data {
+  @include span-columns(10 of 12);
+  @include omega;
+  margin-bottom: $base-spacing;
+}

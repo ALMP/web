@@ -1,0 +1,133 @@
+en:
+  enumerize:
+    purchase_price:
+      status:
+        pending: Pending
+        declined: Declined
+        confirmed: Approved
+      unit:
+        item: item
+        meter: meter
+        long_meter: long meter
+        kg: kg
+        liter: liter
+        carat: carat
+        pound: pound
+        ounce: ounce
+        foot: foot
+        inch: inch
+        gallon: gallon
+        cubic_meter: cubic meter
+        hour: hour
+        day: day
+        project: project
+    review:
+      category:
+        current_buyer: Current buyer/supplier
+        former_buyer: Former buyer/supplier
+        potential_buyer: Potential buyer/supplier
+        operating_officer: Current employee
+        former_employee: Former employee
+      status:
+        pending: Pending
+        declined: Declined
+        confirmed: Approved
+    user:
+      type:
+         AdminUser: Admin
+         User: Regular
+  activerecord:
+    errors:
+      models:
+        review:
+          attributes:
+            company_name:
+              not_exists: is not exists
+    models:
+      review:
+        one: Review
+        other: Reviews
+      category:
+        one: Industry
+        other: Industries
+      user:
+        one: User
+        other: Users
+      publication:
+        one: Publication
+        other: Publications
+      faq:
+        one: FAQ
+        other: FAQs
+    attributes:
+      user:
+        recommendator: Who recommended us?
+      purchase_price:
+        name: Name
+        kind: Type
+        unit: Measurement unit
+        value: Cost ($)
+      company:
+        company_aliases: Aliases
+        aliases: Aliases
+        categories: Industries
+        goods_type: Goods
+        goods: Products or services
+        url: Website
+        city: "City, Country"
+        logo_preview: Preview
+        remove_logo: Remove?
+      good:
+        name_en: Name (en)
+        name_ru: Name (ru)
+        name_zh_cn: Name (zh-cn)
+      category:
+        name_en: Name (en)
+        name_ru: Name (ru)
+        name_zh_cn: Name (zh-cn)
+      city:
+        name_en: Name (en)
+        name_ru: Name (ru)
+        name_zh_cn: Name (zh-cn)
+      custom_rating:
+        title: Other
+        title_details: Specify other
+        value: Value
+      review:
+        rating: Overall Rating
+        advatages: Advantages
+        disadvantages: Disadvantages
+        recommendations: Advice to management and other users
+        thankful: Thank the company's employees
+        recommended: Recommend the company
+        category: Status
+        fairness: Fairness
+        quality: The quality of goods (works, services)
+        payments: Terms of payments/deliveries
+        service: Level of service
+        stability: Reliability/Stability of the company
+        name: Title of the review
+        company: Company
+        company_name: Company
+        created_at: Creation time
+        status: Status
+        terms_of_use_confirmed: Terms of Use confirmation
+        user: Author
+      publication:
+        head: head
+        annotation: Annotation
+        link: Link
+        date_of_publication: Date of publication
+        company: Company
+        company_name: Company
+        created_at: Creation time
+      faq:        
+        position: Position
+        question: Question
+        question_ru: Question (ru)
+        question_en: Question (en)
+        question_zh_cn: Question (zh-cn)
+        answer: Answer
+        answer_ru: Answer (ru)
+        answer_en: Answer (en)
+        answer_zh_cn: Answer (zh-cn)

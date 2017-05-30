@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="<%= Globalize.locale %>">
+  <head>
+    <title>fairpard</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <%= metamagic_with_defaults %>
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="turbolinks-cache-control" content="no-cache">
+    <%= analytics_init if GoogleAnalytics.valid_tracker? %>
+  </head>
+
+  <body class="<%= body_class %>">
+    <%= render 'shared/navigation' %>
+    <div class="white-stripe"></div>
+    <main class="container">
+      <div class="row">
+        <%= render "shared/flashes" %>
+
+        <div class="col-sm-8 col-xs-12">
+          <div class="card border-top-0">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item">
+                <h1 class="text-warning"><%= yield :title %></h1>
+              </div>
+              <div class="list-group-item">
+                <%= yield %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar col-sm-4 hidden-xs-down">
+          <div class="sticky card border-top-0">
+            <div class="card-block">
+              <%= yield :sidebar %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%= render "shared/footer" %>
+  </body>
+</html>

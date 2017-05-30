@@ -1,0 +1,12 @@
+.btn-action {
+  color: #fff;
+  background-color: $brand-action;
+  border-color: $brand-action;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: darken($brand-action, 10%);
+    border-color: darken($brand-action, 10%);
+  }
+}

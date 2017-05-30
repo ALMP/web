@@ -1,0 +1,14 @@
+.container
+  .row
+    .col-sm-12
+      .w-100
+        = render 'companies/search'
+  .row
+    .col-sm-8.col-xs-12
+      .card
+        .card-block
+          h1.text-warning= @good.name.gsub(/\u00A0/i, "").humanize
+          - interval = @companies.pagination_interval
+          = page_entries_info @companies
+          = render present_many @companies
+          .pull-right= paginate @companies

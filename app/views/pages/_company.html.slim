@@ -1,0 +1,5 @@
+= content_tag_for :li, company, class: 'list-group-item' do
+  .d-flex.w-100
+    = link_to company.name, company
+  .pr-2.text-warning= stars company.rating
+  small.text-muted= t('.recommendations', value: company.recommended.to_i)

@@ -1,0 +1,79 @@
+.pages.pages-index {
+  main {
+    background: white;
+  }
+
+  .companies-container {
+    padding: $grid-gutter-width-base 0;
+  }
+
+  .bg-image {
+    width: 100%;
+    @include linear-gradient(-45deg, $brand-warning 0%, $brand-primary 100%);
+    position: absolute;
+  }
+
+  .search-form-wrapper {
+    padding-top: 200px;
+
+    @include media-breakpoint-down(md) { 
+      padding-top: 100px;
+    }
+
+    @include media-breakpoint-down(sm) { 
+      padding-top: 50px;
+    }
+
+    @include media-breakpoint-down(xs) { 
+      padding-top: 0;
+    }
+  }
+
+  .companies-search {
+    .row {
+      @extend .no-gutters;
+    }
+  }
+
+  .jumbotron {
+    color: white;
+    padding: .5rem 1rem;
+    @include linear-gradient(-45deg, transparentize($brand-warning, .5) 0%, lighten($brand-primary, 10%) 100%);
+
+    .advanced-search {
+      padding-top: .25rem;
+      padding-bottom: .25rem;
+      a {
+        @include media-breakpoint-down(xs) {
+          color: $brand-primary;
+          background: white;
+          padding: .25rem;
+        }
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    @include media-breakpoint-down(xs) {
+      color: $brand-primary;
+      background: transparent;
+    }
+  }
+
+  .instruction-img {    
+    max-width: 100%;
+    @include media-breakpoint-down(xs) { 
+      max-height: 64px;
+    }
+    max-height: 128px;
+  }
+
+  .instruction-text {
+    font-size: 1.2rem;
+  }
+}
+

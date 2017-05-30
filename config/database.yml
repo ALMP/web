@@ -1,0 +1,30 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: companies_reviews_development
+
+test:
+  <<: *default
+  database: companies_reviews_test
+
+ci:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+
+staging:
+  <<: *default
+  database: companies_reviews_staging
+  username: companies_reviews
+  password: <%= ENV['COMPANIES_REVIEWS_DATABASE_PASSWORD'] %>
+
+production:
+  <<: *default
+  database: companies_reviews_production
+  username: fairpard
+  password: <%= ENV['COMPANIES_REVIEWS_DATABASE_PASSWORD'] %>

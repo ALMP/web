@@ -1,0 +1,28 @@
+= content_for :site_page_title, t('.title')
+
+.container
+  .row
+    .col-sm-12
+      .w-100= render 'search'
+  .row
+    .col-sm-8.col-xs-12
+      .card
+        .card-block
+          h1.text-warning= t('.title')
+          .pull-right
+            span= sort_link @q, :aggregated_rating_rating, t('.rating')
+            span  |  
+            span= sort_link @q, :aggregated_rating_confirmed_reviews_count, t('.popularity')
+          - interval = @companies.pagination_interval
+          = page_entries_info @companies
+          = render @presented_companies
+          .pull-right= paginate @companies
+    .col-sm-4
+      .card.sticky
+        .card-block
+          .media
+            .d-flex.mr-2
+              .font-size-3.text-action= fa_icon 'building-o'
+            .media-body
+              p.mb-1.font-weight-bold= t('.info_header')
+              p= t('.info_text_html')

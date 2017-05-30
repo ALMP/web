@@ -1,0 +1,16 @@
+.container
+  .row
+    .col-sm-6.offset-2
+      h1.text-center = t('.title')
+      = simple_form_for resource, as: resource_name, url: registration_path(resource_name), wrapper: 'vertical_pull_right_form' do |f|
+        = f.input :email, autofocus: true, as: :email, required: false
+        = f.input :password, autocomplete: 'off'
+        = f.input :password_confirmation, autocomplete: 'off'
+        = f.input :recommendator, autocomplete: 'off', as: :email
+
+        .form-actions.pull-right
+          = f.submit t('.register'), class: 'btn btn-action'
+
+  .links.row
+    .col-sm-6.offset-2.text-right
+      = render 'devise/shared/links'

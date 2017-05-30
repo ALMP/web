@@ -1,0 +1,14 @@
+hr
+= f.simple_fields_for field.attribute, (f.object.public_send(field.attribute) || f.object.public_send("build_#{field.attribute}")) do |nf|
+  .field-unit
+    .field-unit__label
+      = f.label f.object.class.human_attribute_name(field.attribute)
+    .field-unit__field
+      - if nf.object.persisted?
+        = nf.link_to_remove fa_icon('times')
+
+  .nested id=field.association_name
+    = render 'fields/nested_has_one/fields',
+        f: nf,
+        field: field
+hr

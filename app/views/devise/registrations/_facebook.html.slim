@@ -1,0 +1,4 @@
+- if data&.uid
+  = link_to fa_icon(:facebook), 'javascript:void()', class: 'fb'
+- else
+  = link_to fa_icon(:facebook), omniauth_authorize_path(:user, :facebook)

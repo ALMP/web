@@ -1,0 +1,14 @@
+= simple_form_for @purchase_price do |f|
+  = f.input :name, as: :string, label: PurchasePrice.human_attribute_name(:name)
+  = f.input :company_name, as: :string, input_html: { class: 'typeahead' }, label: PurchasePrice.human_attribute_name(:company)
+  hr.full
+  = f.input :kind, include_blank: false
+  .row
+    .col-sm-6
+      = f.input :quantity, wrapper: :sm6_form, include_blank: false
+    .col-sm-6
+      = f.input :unit, wrapper: :sm6_form, include_blank: false
+  = f.input :value
+
+  .form-actions
+    = f.submit t('.submit'), class: 'btn btn-action'

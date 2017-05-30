@@ -1,0 +1,4 @@
+- if data&.uid
+  = link_to fa_icon(:vk), 'javascript:void()', class: 'vk'
+- else
+  = link_to fa_icon(:vk), omniauth_authorize_path(:user, :vkontakte)

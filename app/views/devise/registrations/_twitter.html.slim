@@ -1,0 +1,4 @@
+- if data&.uid
+  = link_to fa_icon(:twitter), 'javascript:void()', class: 'twitter'
+- else
+  = link_to fa_icon(:twitter), omniauth_authorize_path(:user, :twitter)

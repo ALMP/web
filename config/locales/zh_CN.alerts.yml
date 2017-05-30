@@ -1,0 +1,72 @@
+'zh-CN':
+  flash:
+    actions:
+      approve:
+        success: "%{resource_name} 已经成功地批准."
+      decline:
+        success: "%{resource_name} 他成功地拒绝了."
+      create:
+        success: "%{resource_name} 它已成功创建."
+        error: "%{resource_name} 不能创建."
+      update:
+        success: "%{resource_name} 已成功更新."
+        error: "%{resource_name} 不能被更新."
+      destroy:
+        success: "%{resource_name} 成功地除去."
+        error: "%{resource_name} 不能除去."
+    reviews:
+      create:
+        success: "%{resource_name} 它已成功创建."
+        error: "%{resource_name} 不能创建."
+      update:
+        success: "%{resource_name} 成功发送进行审阅."
+        error: "%{resource_name} 不能被更新."
+    companies:
+      create:
+        success: "%{resource_name} 它已成功创建."
+        error: "%{resource_name} 不能创建."
+      update:
+        success: "%{resource_name} 已成功更新."
+        error: "%{resource_name} 不能被更新."
+      destroy:
+        success: "%{resource_name} 成功地除去."
+        error: "%{resource_name} 不能除去."
+    users:
+      registrations:
+        create:
+          success: "欢迎. 您已成功签约."
+          error: "它是不可能的登记."
+        update:
+          success: "您的个人资料已成功更新."
+          error: "您的个人资料无法更新."
+      sessions:
+        create:
+          success: "已成功登录."
+          error: "无效的用户名或密码"
+        destroy: 
+          success: "正在登出成功."
+      passwords:
+        create:
+          success: "电子邮件说明重置您的密码已经发送."
+          error: "用户未找到."
+    admin:
+      categories:
+        create:
+          success: "%{resource_name} 它已成功创建."
+          error: "%{resource_name} 不能创建."
+        update:
+          success: "%{resource_name} 已成功更新."
+          error: "%{resource_name} 不能被更新."
+        destroy:
+          success: "%{resource_name} 成功地除去."
+          error: "%{resource_name} 不能除去."
+      companies:
+        create:
+          success: "%{resource_name} 它已成功创建."
+          error: "%{resource_name} 不能创建."
+        update:
+          success: "%{resource_name} 已成功更新."
+          error: "%{resource_name} 不能被更新."
+        destroy:
+          success: "%{resource_name} 成功地除去."
+          error: "%{resource_name} 不能除去."

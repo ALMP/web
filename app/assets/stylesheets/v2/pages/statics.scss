@@ -1,0 +1,17 @@
+.pages {
+  .sidebar .rrssb-buttons li {
+    width: 10em !important;
+    float: none;
+    margin-bottom: .5em;
+  }
+
+  .sidebar .card {
+    min-height: 14.5rem;
+  }
+
+  &.pages-index {
+    main {
+      // background-color: white;
+    }
+  }
+}

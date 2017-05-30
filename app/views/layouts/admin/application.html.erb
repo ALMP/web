@@ -1,0 +1,50 @@
+<%#
+# Application Layout
+
+This view template is used as the layout
+for every page that Administrate generates.
+
+By default, it renders:
+- Sidebar for navigation
+- Content for a search bar
+  (if provided by a `content_for` block in a nested page)
+- Flashes
+- Links to stylesheets and Javascripts
+%>
+
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+<head>
+  <meta charset="utf-8" />
+  <meta name="ROBOTS" content="NOODP" />
+  <meta name="viewport" content="initial-scale=1" />
+  <meta name="turbolinks-cache-control" content="no-cache">
+  <title><%= content_for(:title) %> | <%= Rails.application.class.parent_name.titlecase %></title>
+  <%= render "stylesheet" %>
+  <%= yield(:head) %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="administrate">
+  <div class="app-container">
+
+    <div class="sidebar">
+      <%= render "sidebar" -%>
+    </div>
+
+    <main class="main-content" role="main">
+      <%= content_for(:search) %>
+      <%= render "admin/application/flashes" -%>
+      <%= content_for(:filters) %>
+      <%= yield %>
+    </main>
+
+  </div>
+
+  <%- api_key = Rails.application.secrets.google_maps_api_key %>
+  <%- google_maps = "https://maps.googleapis.com/maps/api/js?key=#{api_key}&libraries=places" %>
+  <%= javascript_include_tag google_maps %>
+ 
+  <%= render "javascript" %>
+</body>
+</html>

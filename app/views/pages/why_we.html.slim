@@ -1,0 +1,6 @@
+= content_for :title, t('.title')
+
+p= t('.content_html')
+
+= content_for :sidebar do
+  = render 'shared/share_buttons'

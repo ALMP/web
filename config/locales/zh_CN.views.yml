@@ -1,0 +1,209 @@
+'zh-CN':
+  users:
+    reviews:
+      index:
+        title: 我的评语
+        subtitle_html: 结果 <strong>%{interval}</strong> 的 <strong>%{total}</strong> 评语.
+  global:
+    ago: 向后
+  pages:
+    company:
+      recommendations: "%{value}% 推荐"
+    index:
+      popular_companies: 受欢迎的公司
+      new_companies: 新公司
+      title: 公司的搜索
+      find_partner: 寻找商业合作伙伴
+      review_history: 业务回顾
+      make_decision: 做出决定
+      submit_review: 提交您的评论
+    contacts:
+      title: 聯繫人
+      content_html: |
+        <p> 你可以通过 <a href="http://facebook.com">Facebook</a>, <a href="http://vk.com">VKontakte</a>, <a href="http://twitter.com">Twitter</a> 联系我们或电邮 <a href="mailto:info@fairpard.com">info@fairpard.com</a>.
+  shared:
+    share_buttons:
+      share_us: 分享
+    footer:
+      companies: 公司
+      admin: 控制面板
+      terms: 使用条款
+      guidlines: 指南
+      privacy: 隐私权政策
+      about: 关于网站
+      contacts: 聯繫人
+      why_we: 为什么我们不同
+      how_it_works: 怎么运行的
+      faq: 常见问题
+      language: 语言
+      legal: 的信息
+      content: Fairpard
+      disclaimer: Fairpard自由使用，并且不需要登记.所有评论留在公司的员工匿名和其他用户.
+    navigation:
+      home: 主页
+      new_review: 新密码
+      new_company: 输入有关公司的信息
+      my_reviews: 我的评语
+      account: 设置
+      signout: 注销
+      header_text: 公平竞争与公平的随从 — — 创建和共享在 Fairpard 上的商业发展历史。
+  reviews:
+    new:
+      title: 新密码
+    edit:
+      title: 将信息添加到撤销
+      hints:
+        min_length: 最少 %{value} 个字符
+      labels:
+        fairness_html: 评分
+        quality_html: 商品质量 (工作, 服务)
+        price_html: 价格货物 (工作, 服务)
+        payments_html: 付款和交货条件
+        service_html: 同行的诊治
+        stability_html: 该公司的可靠性/稳定性
+    index:
+      no_reviews: 成为第一个写评论
+      all_reviews: 所有的评语
+      overview_tab: 概观
+      reviews_tab: 评语
+      overview: 信息 %{company_name}
+      reviews: 意见 %{company_name}
+      title: 评语
+      add_a_review: 发表评语
+      subtitle_html: 结果 <strong>%{interval}</strong> 的 <strong>%{total}</strong> 评语.
+  companies:
+    rating:
+      recommended: 推荐给其他人
+      thankful: 感谢工作
+    search:
+      advanced_search: 高级搜索
+      query: 输入您的搜索查询
+      search: 搜索
+      city: 城市
+      category: 行业
+      good: 货
+    new:
+      title: 输入有关公司的信息
+      title_from_review: 公司以这个名字是不是在系统中.输入有关它的信息
+    show:
+      all_reviews: 所有的评语
+      overview_tab: 概观
+      reviews_tab: 评语
+      overview: 信息 %{company_name}
+      reviews: 回顾 %{company_name}
+      suggests: 这是你的业务？
+      admin: 控制面板
+      email: 电子邮件
+      add_a_review: 发表评语
+      suggest_edits_html: 提议的更改过%{link}
+      edit_company_html: 编辑公司%{admin_link}
+    index:
+      rating: 评级
+      popularity: 声望
+      title: 公司
+      subtitle_html: 结果 <strong>%{interval}</strong> 的 <strong>%{total}</strong> 公司.
+      info_header: 没有找到您的公司吗？
+      info_text_html: <strong><a href="/companies/new">下载</a></strong> 信息.
+    company:
+      recommendations: "%{value}% 推荐"
+      add_a_review: 离开一个审查
+  fields:
+    place:
+      form:
+        placeholder: 输入一个位置
+  devise:
+    sessions:
+      new:
+        login: 登录
+  helpers:
+    submit:
+      create: 创建
+      submit: 贮存
+      update: 更新
+  admin:
+    application:
+      sidebar:
+        logout: 注销
+    goods:
+      index:
+        new: 新
+      new:
+        new: 新
+        back: 向后
+      show:
+        edit: 编辑
+      edit:
+        show: 放映
+        edit: 编辑
+    cities:
+      index:
+        new: 新
+      new:
+        new: 新
+        back: 向后
+      show:
+        edit: 编辑
+      edit:
+        show: 放映
+        edit: 编辑
+    users:
+      index:
+        new: 新
+      new:
+        new: 新
+        back: 向后
+      show:
+        edit: 编辑
+      edit:
+        show: 放映
+        edit: 编辑
+    reviews:
+      index:
+        new: 新
+      new:
+        new: 新
+        back: 向后
+      show:
+        edit: 编辑
+      edit:
+        show: 放映
+        edit: 编辑
+      filters:
+        title: 过滤器
+        filter: 过滤
+        clear: 明确
+    categories:
+      index:
+        new: 新
+      new:
+        new: 新
+        back: 向后
+      show:
+        edit: 编辑
+      edit:
+        show: 放映
+        edit: 编辑
+    companies:
+      index:
+        new: 新
+      new:
+        new: 新
+        back: 向后
+      show:
+        edit: 编辑
+        public_link: 公共链接
+      edit:
+        show: 放映
+        edit: 编辑
+      filters:
+        title: 过滤器
+        filter: 过滤
+        clear: 明确
+  administrate:
+    actions:
+      approve: 批准
+      decline: 下降
+    application:
+      search:
+        placeholder: 搜索 
+        hint: 按Enter键进行搜索

@@ -1,0 +1,8 @@
+hr {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  &.full {
+    margin-left: -$card-spacer-x;
+    width: calc(100% + #{2 * $card-spacer-x});
+  }
+}

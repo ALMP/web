@@ -1,0 +1,7 @@
+- data = field.data
+- if data
+  - if field.send(:options)[:class_name].present?
+    - data = data.becomes(field.send(:options)[:class_name].constantize)
+  = link_to field.display_associated_resource, [namespace, data]
+- else
+  span -

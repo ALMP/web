@@ -1,0 +1,522 @@
+en:
+  goods:
+    good:
+      companies:
+        one: '1 company'
+        zero: '0 companies'
+        other: '%{count} companies'
+  categories:
+    index:
+      title: Industries
+      subtitle_html: Showing <strong>%{interval}</strong> of <strong>%{total}</strong> industries.
+    category:
+      companies:
+        one: '1 company'
+        zero: '0 companies'
+        other: '%{count} companies'
+    goods:
+      index:
+        subtitle_html: Showing <strong>%{interval}</strong> of <strong>%{total}</strong> goods.
+  users:
+    purchase_prices:
+      index:
+        title: My Purchase Prices
+    reviews:
+      index:
+        title: My reviews
+        subtitle_html: Showing <strong>%{interval}</strong> of <strong>%{total}</strong> reviews.
+  global:
+    translate: Translate
+    ago: ago
+  pages:
+    company:
+      recommendations: "%{value}% recommended"
+    index:
+      all_goods: All products or services
+      all_categories: All industries
+      popular_companies: Popular Companies
+      new_companies: Recent Reviews
+      title: Fair partners. Healthy business. Better world
+      find_partner: Find the business partner
+      review_history: Review it business history
+      make_decision: Make decision
+      submit_review: Submit your review
+    contacts:
+      title: Contacts
+      content_html: |
+        <p>You can contact us through <a href="http://facebook.com">Facebook</a>, <a href="http://vk.com">VKontakte</a>, <a href="http://twitter.com">Twitter</a> or email <a href="mailto:info@fairpard.com">info@fairpard.com</a>.
+    about:
+      title: About Fairpard
+      content_html: |
+        <p><b>We believe in making the world better by connecting fair business partners.</b> We also believe that fairness is a feature defined by community opinion, not by experts or reviews published by the business on own websites.</p>
+        <br/>
+        <p>In this regard we designed Fairpard – website where anyone can share its opinion about the way a company, corporation or organizations deals with its business partners. Does it business fairly or squeezes its partners; or changes the deal at critical moments and thus significantly cuts your profits, or makes other nonproper moves? Your reviews may be based on your experience as a contractor, supplier, customer or as a party in joint venture with of the respective business partner; or as current, former or potential counterpart; or as employee of the partner itself or its counterpart or otherwise. We value every comment and review that helps to understand how the pard trades with others.</p>
+        <br/>
+        <p>Please share your experience to reward fair pards and prevent unfair business practice. It will make the doing business easy worldwide.</p>
+    guidlines:
+      title: Guidelines
+      content_html: |
+         <p><b>General Guidelines</b><br/><b>Fairpard is designed to connect fair partners worldwide to make business with.</b>We believe that goal can be efficiently achieved through helping people openly share their experience in making business with a particular company, corporation or an organization. This simple goal defines our approaches, guidelines and principles described below on how we ensure collection of the respective information while balancing fairness to partners.</p>
+         <ul>
+           <li>We believe that everybody has the right “to share its opinion” either being a current, former or potential business partner, or current or former employee of the reviewed business or its counterpart, or otherwise having data on business behavior of respective company, corporation or an organization.</li>
+           <li>We never suppress, filter, or delete content simply because it is negative/lower-rated, or positive/higher-rated.</li>
+           <li>We take measures to ensure that provided Content doesn’t violate Terms of Use (“ToU”) and thus moderate it before posting.</li>
+           <li>We moderate every piece of Content through our proprietary technology and involving our staff, if needed.</li>
+           <li>Text reviews, posts and other Content can be edited or deleted by our staff in order to ensure that Content meets ToU and not more.</li>
+           <li>We apply the same standard of review for all.</li>
+           <li>We stay neutral in all cases of dispute; we don’t take sides and we don’t act as the finder of fact with respect to review content.</li>
+           <li>We remove content if we have evidence that users were incentivized to or coerced into leaving the content.</li>
+         </ul>
+         <br/>
+         <p><b>Reviews Guidelines</b><br/>To make your review helpful for other businesses seeking for a fair partner, please follow these guidelines.</p>
+         <ul>
+           <li>Review should be honest and truthful, i.e. make sure that they are factually correct.</li>
+           <li>Review is your personal opinion about a particular company, corporation or an organization based on your experience as a counterpart (former, current or potential), or an employee of respective entity, or otherwise.</li>
+           <li>The number of reviews isn’t limited, but please post reviews based on experience within last five years to make it relevant for current situation.</li>
+           <li>To make the review balanced, we encourage you to put pluses and minuses of the respective experience.</li>
+           <li>We discourage reviews that include profanities, threats or discrimination or otherwise violate the Terms of Use.</li>
+           <li>We don’t allow to post in the reviews your contact or identification data.</li>
+           <li>We don’t allow reviews that doesn’t help the community to assess fairness of business partners, but made solely to advertise in any way something or somebody. We reject reviews that relate to a particular product or service instead of the company, corporation or organization itself.</li>
+           <li>Reviews should by original and comprehensible.</li>
+         </ul>
+    privacy:
+      title: Fairpard Privacy Policy
+      content_html: |
+        <p>Fairpard ("<b>Fairpard</b>", "<b>we</b>", "<b>our</b>", "<b>us</b>") is an online service that shares with users ("you") the experience of working with different businesses worldwide at any industry. By accessing and using Fairpard, you acknowledge that you have read and understood this Privacy Policy and the information on collection and handling practices outlined in it. We may change this Privacy Policy from time to time without any notice to the users. So please check back regularly to keep informed of any updates.</p>
+        <br/>
+        <p><b>Scope</b><br/>This Privacy Policy describes in detail our policy and practices regarding our collection, use and disclosure of information about you.<br/>We understand that providing information online involves a great deal of trust on your part. We take this trust very seriously, and make it a high priority to ensure the security and confidentiality of the personal information you provide to us when you visit Fairpard or use our services.</p>
+        <br/>
+        <p><b>What information we collect from you</b><br/><b>In General</b><br/>We receive and store any information you enter on Fairpard or give us in any other way. This includes information that can be used to identify you as an individual natural or legal entity or to contact you directly ("<b>personal information</b>").</p>
+        <p>Personal information includes information you provide us such as your first and last name, company name, telephone number, postal and email addresses, user name and password, and other.</p>
+        <p>You can choose not to provide this personal information to us, but in general some information about you is required in order for you to receive relevant offerings from Fairpard and use other benefits available for registered users. In addition, some information is also required in order for you to ask us a question or initiate other transactions on our site.</p>
+        <p>Other information we may choose to collect may also include details such as your IP address, information identifying your device, and website browsing history to the extent that information is about you.</p>
+        <br/>
+        <p><b>Information from Other Sources</b></br>
+        We also may periodically obtain information about you from affiliated entities, business partners and other independent third-party sources and add it to other information about you. Specifically, if you connect to Fairpard using Facebook, Vkontakte or another social network, we will receive information that you authorize the social network to share with us, including information about your friends and connections on that social network. Any information that we collect from your social network account may depend on the privacy settings you have set with the social network, so please consult the social network's privacy and data practices.</p>
+        <br/>
+        <p><b>Automatic Collection of Information</b><br/>We automatically collect some information from your computer or device when you visit Fairpard. For example, we will collect session data, including your IP address, Web browser software, and referring website. We also may collect information about your online activity, such as content viewed, pages visited, and searches facilitated or made. One of our goals in collecting this automatic information is to help us understand the interests and preferences of our users and customize your user experience.</p>
+        <br/>
+        <p><b>Cookies and Other Web Technologies</b><br/>We collect information via cookies and other similar technologies (such as web beacons). Cookies are small text files that are automatically placed on your computer or mobile device when you visit almost any website. They are stored by your Internet browser. Cookies contain basic information about your Internet use. Your browser sends these cookies back to the site every time you revisit it, so it can recognize your computer or mobile device and personalize and improve your site experience.</p>
+        <p>You can find out more about cookies generally, including how to see what cookies have been set on your device and how to manage and delete them at Wikipedia.</p>
+        <p>Fairpard use cookies for the following general purposes:</p>
+        <ul>
+        <li>To help us recognize your browser as a previous visitor and save and remember any preferences that may have been set while your browser was visiting our site. For example, if you register on our site, we may use cookies to remember your registration information, so you do not need to log into our site each time you visit. We also may record your password in a cookie, if you checked the box entitled "Keep me signed in on this computer unless I sign out." Please note that member IDs, passwords, and any other account-related data included in such cookies are encrypted for security purposes.</li>
+        <li>To help us customize the content and experience provided to you on Fairpard. For example, when you access a web page, a cookie is automatically set by us, our service providers, or our partners to recognize your browser as you navigate on the Internet and to present you with information based on your apparent interests.</li>
+        </ul>
+        <br/>
+        <p>Our sites also may use Web beacons (also known as clear gifs, pixel tags or Web bugs), which are tiny graphics with a unique identifier, similar in function to cookies, that are placed in the code of a Web page. We use Web beacons to monitor the traffic patterns of users from one page within our sites to another, to deliver or communicate with cookies, to understand whether you have come to our site from an online advertisement displayed on a third-party website, and to improve site performance. We also may allow our service providers to use Web beacons to help us understand which emails have been opened by recipients and to track the visitor traffic and actions on our site. This helps us measure the effectiveness of our content and other offerings.</p>
+         <br/>
+         <p><b>How we use your information</b></br><b>General purposes</b><br/>Fairpard uses the information we collect about you for the following general purposes:</p>
+         <ul>
+         <li>for registration and to manage your account, including to allow your access to and use of our site;</li>
+         <li>to communicate with you in general, including to provide information about Fairpard and invitations from the Fairpard community;</li>
+         <li>to enable us to publish your reviews and other content to the Fairpard community;</li>
+         <li>to respond to your questions and comments;</li>
+         <li>to measure interest in and improve our products, services, and Fairpard;</li>
+         <li>to otherwise customize your experience with Fairpard;</li>
+         <li>to solicit information from you, including through surveys;</li>
+         <li>to resolve disputes or troubleshoot problems;</li>
+         <li>to prevent potentially prohibited or illegal activities;</li>
+         <li>to enforce our Terms of Use; and</li>
+         <li>as otherwise described to you at the point of collection.</li>
+         </ul>
+         <br/>
+         <p>We don’t disclose your personal information without your consent.</p>
+         <br/>
+         <p><b>How Long We Keep Your Information for</b><br/>We may retain certain information associated with your account in our archives, including for analytical purposes as well as for recordkeeping integrity. The periods for which we retain your information depend on the purpose for which we collected it and we use it.<br/>We will not retain your personal information for longer than is necessary for our business purposes or for legal requirements. We may retain some information for a period of time after you have closed your account with us, for instance if this is necessary to meet our legal obligations or to exercise, defend or establish legal rights.</p>
+         <br/>
+         <p><b>How we protect your information</b><br/>We want you to feel confident about using Fairpard, and we are committed to protecting the information we collect. While no website can guarantee security, we have implemented and maintain appropriate physical, administrative, technical, and organizational measures to protect the personal information you provide us against unauthorized or unlawful access, use of disclosure, and against accidental loss, damage, alteration or destruction. For example, only authorized employees are permitted to access personal information, and they only may do so for permitted business functions.</p>
+         <br/>
+         <p><b>External links</b><br/>Fairpard may include links to third party websites. If you access other websites from the links provided on Fairpard, the operators of those websites may collect information from you which will be used by them in accordance with their privacy policy, which may differ from our Privacy Policy. We recommend that you examine the privacy statements posted on those other websites to understand their procedures for collecting, using, and disclosing personal information.</p>
+    terms:
+      title: Fairpard Terms of Use
+      content_html: |
+        <p><i>These Terms of Use are effective for all users, including registered and nonregistered.</i></p>
+        <br>
+        <p>These Terms of Use, including its respective changes and amendments from time to time (hereinafter “<b>ToU</b>”), govern relations between Fairpard ("<b>Fairpard</b>", "<b>we</b>", "<b>our</b>", "<b>us</b>") and registered and unregistered users ("<b>you</b>") in relation to all services provided by Fairpard website, pages in social networks, email, mobile and/or related applications (“<b>Fairpard</b>”). ToU also includes Privacy Policy. By accessing and/or using the Fairpard in any manner, you agree to be bound by ToU as legally binding agreement and confirm that you read and understood ToU. If you are accessing and/or using the Fairpard on behalf of any legal entity, then “you” also means that legal entity, i.e. in this case you and that legal entity agree to be bound by the ToU irrespective to other agreements or obligations.</p>
+        <p>If you don’t accept the ToU, then you’re not authorized to use the Fairpard.</p>
+        <p>The Fairpard is provided solely to help users to share and be aware of business histories, i.e. data on how business partners (public and private companies, corporations, organizations etc.) do business  by gathering and sharing respective information, opinions and experience.</p>
+        <br>
+        <p>1. ELIGIBILITY AND USAGE OF THE FAIRPARD</p>
+        <p>By accessing and using the Fairpard, you declare and consciously confirm that:</p>
+        <ol>
+        <li>you are at least 13 years old and have all necessary competences and powers to use the Fairpard accordingly to these ToU;</li>
+        <li>all information provided by you on Fairpard is true, accurate and complete at your reasonable efforts;</li>
+        <li>you are bound by the ToU and use the Fairpard accordingly to the ToU;</li>
+        <li>you don’t use the Fairpard for the commercial purposes, unless you enter in a separate agreement with the Fairpard in this regard.</li>
+        </ol>
+        <br/>
+        <p>Fairpard has its absolute and limitless right, but not an obligation, to deny access to the Fairpard to any legal or natural entity at any time and for any reason or without it, including, but limited to, for violation of the ToU.</p>
+        <br/>
+        <p>Copying, transmission, reproduction, replication, posting or redistribution of the Fairpard Content or any portion thereof is allowed after the prior written permission of Fairpard. To gain the permission, please contact Fairpard on <a href='mailto:info@fairpard.com'>info@fairpard.com</a></p>
+        <br/>
+        <p>Usage of the Fairpard accordingly to the ToU is free of charge. At the same time the Fairpard may have contact information (websites, phones etc.) of the third-parties. In this case the third-parties may charge a fee for provided content, service or otherwise. So it is your sole responsibility to conduct whatever investigation you feel is necessary or appropriate before making any deal with any third party to determine whether a charge will be incurred.</p>
+        <br/>
+        <p>2. YOUR FAIRPARD ACCOUNT</p>
+        <p>Fairpard provides access and usage to all users irrespective of their registration in the Fairpard. Registered users have their own account in the Fairpard and are fully responsible for safeguarding account information as well as for any use of the account by anyone other than the respective registered user. In case of any suspicion of unauthorized use of the account, the respective registered user should notify Fairpard immediately. Accounts are subject to cancellation or suspension by Fairpard at any time.</p>
+        <p>Fairpard account is created via:</p>
+        <ol>
+        <li><b>e-mail</b>. For this type of registration, you need to provide a valid email address and set up a password.</li>
+        <li><b>social networks</b>, such as Facebook, Vkontakte and Twitter (“social networks”). Accessing to the Fairpard through social networks, you agree to provide us access, availability and storage (if any) of any data, information, photos and video materials, messages, tags and any other materials and information that you have provided to, stored and made accessible in your social network so that it is available on and through Fairpard via your account.
+        </li>
+        </ol>
+        <br/>
+        <p>3. CONTENT ON FAIRPARD</p>
+        <ol>
+        <li><b>Users-generated content</b>. Users (registered and nonregistered) create content on Fairpard that is available to you ("Content") and includes, but not limited to, any information, messages, photo and video materials, reviews, supplier opinions, customer views, employees comments, potential counterpart reactions, postings, text, files, images, data or other materials you find on Fairpard <p>Because we do not control such Content, you understand and agree that: (1) we are not responsible for, and do not endorse, any such Content, including advertising and information about third-party products and services; (2) we make no guarantees about the accuracy, completeness, reliability, quality or any other characteristics of the Content; and (3) we assume no responsibility for unintended, objectionable, inaccurate, misleading, or unlawful Content made available by any users and/or third parties.</p>
+        </li>
+        <li><b>Reviews</b>. Businesses can’t offer any incentives or rewards in exchange for reviews on such business. We will remove reviews found in breach of this condition.</li>
+        <li><b>Fairpard’s right to use the Content</b>. By submitting any Content to Fairpard, you hereby grant to us an unrestricted, irrevocable, perpetual, non-exclusive, fully-paid and royalty-free license (with the right to sublicense through unlimited levels of sublicenses) to use, copy, perform, display, create derivative works of, adapt and distribute such Content in any and all media (now known or later developed) throughout the world for any purpose. To the greatest extent permitted by applicable law, you hereby expressly waive any and all of your rights applicable to Fairpard's exercise of the foregoing license. No compensation will be paid with respect to the Content that you post through Fairpard. You should only submit Content to Fairpard that you are comfortable to sharing it with others under the terms and conditions of these ToU.</li>
+        <li><b>Privacy</b>. Fairpard adheres to keeping your privacy. Any personal information you post on the Fairpard will be used in accordance with our Privacy Policy.</li>
+        <li><b>Restrictions</b> By using Fairpard, you expressly agree not to post, upload to, transmit, distribute, store, create or otherwise publish through Fairpard such Content that:
+        <ul>
+        <li> contain any message, data, information, text, music, sound, photos, graphics, code or any other material that is false, unlawful, misleading, libelous, defamatory, obscene, pornographic, indecent, lewd, suggestive, harassing, or advocates harassment of another person, threatening, invasive of privacy or publicity rights, abusive, inflammatory, fraudulent or otherwise objectionable;</li>
+        <li>offense the online community, such as content that promotes racism, bigotry, hatred or physical harm of any kind against any group or individual;</li>
+        <li>constitute, encourage, promote or provide instructions for a conduct of an illegal activity, criminal offense, give rise to civil liability, violate the rights of any party in any country of the world, or that would otherwise create liability or violate any local, state, national or international law, including, without limitation, stock exchange rules in OECD countries;</li>
+        <li>provide instructional information about illegal activities such as making or buying illegal weapons, violating someone's privacy, or providing or creating computer viruses;</li>
+        <li>infringe any patent, trademark, trade secret, copyright or other intellectual or proprietary right of any party;</li>
+        <li>have private information of any third party, including, without limitation, surname (family name) addresses, phone numbers, email addresses, and bank card numbers;</li>
+        <li>contain restricted or password only access pages, or hidden pages or images (those not linked to or from another accessible page), viruses, corrupted data or other harmful, disruptive or destructive files;</li>
+        <li>isn’t related to Fairpard purpose.</li>
+        </ul>
+        </li>
+        </ol>
+        <br/>
+        <p>Fairpard has its absolute and limitless right, but not an obligation, to check, edit, delete and publish or unpublish all or any particular Content posted on Faipard by any legal or natural entity at any time and for any reason or without it, including, but limited to, for violation of the ToU.</p>
+        <br/>
+        <p>4. FEEDBACK</p>
+        <p>We welcome you feedback regarding the Fairpard (i.e. any ideas, suggestions, documents or proposals etc.) that you may send to our email <a href='mailto:info@fairpard.com'>info@fairpard.com</a> at any time. By receiving your feedback, we assume that it (1) doesn’t breach any laws and lawful interests of any legal or natural entity (for example, it doesn’t contain confidential or proprietary information), (2) we don’t oblige to keep confidentiality or protect the feedback in any other ways, (3) provided feedback is provided with irrevocable, free of charge, non-exclusive, royalty-free, perpetual, usable worldwide license with right to use, modify, prepare derivative works, publish, distribute and sublicense the feedback. Thus you irrevocably waive, and cause to be waived, against Fairpard and its users any claims and assertions of any moral rights contained in such feedback.</p>
+        <br/>
+        <p>5. LIABILITY</p>
+        <p>PLEASE READ THIS SECTION CAREFULLY SINCE IT LIMITS THE LIABILITY OF THE FAIRPARD TO YOU. EACH OF THE SUBSECTIONS BELOW ONLY APPLIES UP TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW. NOTHING HEREIN IS INTENDED TO LIMIT ANY RIGHTS YOU MAY HAVE WHICH MAY NOT BE LAWFULLY LIMITED. IF YOU DO NOT UNDERSTAND THE TERMS IN THIS SECTION OR ELSEWHERE IN THE TOU, PLEASE CONSULT A LAWYER FOR CLARIFICATION BEFORE ACCESSING OR USING FAIRPARD. BY ACCESSING OR USING THE FAIRPARD, YOU REPRESENT THAT YOU HAVE READ, UNDERSTOOD, AND AGREED TO THESE TERMS, INCLUDING THIS SECTION.</p>
+        <ul>
+        <li>THE SITE IS MADE AVAILABLE TO YOU ON AN "AS IS" BASIS, WITH THE EXPRESS UNDERSTANDING THAT THE FAIRPARD MAY NOT MONITOR, CONTROL, OR VET USER CONTENT. AS SUCH, YOUR USE OF THE SITE IS AT YOUR OWN DISCRETION AND RISK. FAIRPARD MAKE NO CLAIMS OR PROMISES ABOUT THE QUALITY, ACCURACY, OR RELIABILITY OF THE SITE, ITS SAFETY OR SECURITY, OR THE SITE CONTENT. ACCORDINGLY, THE FAIRPARD IS NOT LIABLE FOR ANY LOSS OR DAMAGE THAT MIGHT ARISE, FOR EXAMPLE, FROM THE SITE'S INOPERABILITY, UNAVAILABILITY OR SECURITY VULNERABILITIES OR FROM YOUR RELIANCE ON THE QUALITY, ACCURACY, OR RELIABILITY OF THE BUSINESS LISTINGS, RATINGS, REVIEWS (INCLUDING THEIR CONTENT, ORDER, AND DISPLAY), OR METRICS FOUND ON, USED ON, OR MADE AVAILABLE THROUGH THE SITE.</li>
+        <li>FAIRPARD MAKES NO CLAIMS OR PROMISES WITH RESPECT TO ANY THIRD PARTY, SUCH AS THE BUSINESSES LISTED ON THE SITE OR THE SITE'S USERS. ACCORDINGLY, FAIRPARD IS NOT LIABLE FOR ANY LOSS OR DAMAGE THAT MIGHT ARISE FROM THEIR ACTIONS OR OMISSIONS, INCLUDING, FOR EXAMPLE, IF ANOTHER USER OR BUSINESS MISUSES YOUR CONTENT, OR IF YOU HAVE A NEGATIVE EXPERIENCE WITH ONE OF THE BUSINESSES LISTED ON THE SITE.</li>
+        <li>FAIRPARD EXPRESSLY DISCLAIM ALL WARRANTIES, WHETHER EXPRESSED OR IMPLIED, INCLUDING WARRANTIES AS TO THE PRODUCTS OR SERVICES OFFERED BY BUSINESSES LISTED ON THE SITE, AND IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. NO ORAL OR WRITTEN INFORMATION OR ADVICE PROVIDED TO YOU BY A REPRESENTATIVE OF FAIRPARD SHALL CREATE A REPRESENTATION OR WARRANTY.</li>
+        <li>YOUR SOLE AND EXCLUSIVE RIGHT AND REMEDY IN CASE OF DISSATISFACTION WITH THE SITE, RELATED SERVICES, OR ANY OTHER GRIEVANCE SHALL BE YOUR TERMINATION AND DISCONTINUATION OF ACCESS TO, OR USE OF THE SITE.</li>
+        <li> FAIRPARD'S MAXIMUM AGGREGATE LIABILITY TO YOU FOR LOSSES OR DAMAGES THAT YOU SUFFER IN CONNECTION WITH THE SITE OR THESE TERMS IS LIMITED TO THE GREATER OF (1) THE AMOUNT PAID, IF ANY, BY YOU TO THE FAIRPARD IN CONNECTION WITH THE SITE IN THE 12 MONTHS PRIOR TO THE ACTION GIVING RISE TO LIABILITY, OR (2) $100.</li>
+        <li>FAIRPARD DISCLAIM LIABILITY FOR ANY (1) INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, EXEMPLARY, RELIANCE, OR CONSEQUENTIAL DAMAGES, (2) LOSS OF PROFITS, (3) BUSINESS INTERRUPTION, (4) REPUTATIONAL HARM, OR (5) LOSS OF INFORMATION OR DATA.</li>
+        <li>FAIRPARD TAKES NO RESPONSIBILITY AND ASSUMES NO LIABILITY FOR ANY CONTENT POSTED, STORED OR UPLOADED BY ANY USER, OR FOR ANY LOSS OR DAMAGE THERETO, NOR IS FAIRPARD LIABLE FOR ANY MESSAGES, DATA, INFORMATION, TEXT, MUSIC, SOUND, PHOTOS, GRAPHICS, CODE OR ANY OTHER MATERIAL THAT IS FALSE, UNLAWFUL, MISLEADING, LIBELOUS, DEFAMATORY, OBSCENE, PORNOGRAPHIC, INDECENT, LEWD, SUGGESTIVE, HARASSING, OR ADVOCATES HARASSMENT OF ANOTHER PERSON, INVASIVE OF PRIVACY OR PUBLICITY RIGHTS, ABUSIVE, INFLAMMATORY OR OTHERWISE OBJECTIONABLE.</li>
+        </ul>
+        <br/>
+        <p>6. INDEMNIFICATION</p>
+        <p>You hereby (a) indemnify and hold Fairpard harmless against, and agree to pay or otherwise reimburse Fairpard for, any losses, claims, damages, causes of action, demands, recoveries, fines, penalties or other costs and/or liabilities that Fairpard and/or any of its respective employees, officers, or agents may incur or become subject to, including without limitation as a result of any claim, suit or action brought against any of them by any third party (whether or not affiliated with you) on whatever grounds in connection with:</p>
+         <ol>
+         <li>your breach of ToU, Privacy Policy or other conditions to use the Fairpard;</li>
+         <li>your violation of any law or the rights of a third party; or</li>
+         <li>your use of Fairpard, and (b) agree to reimburse Fairpard for any expenses, including any legal expenses, reasonably incurred by Fairpard in connection therewith; provided, however, that the you shall not be liable under the foregoing indemnity to the extent that a court of competent jurisdiction determines in a final judgment that any such loss, claim, damage or liability resulted from the willful misconduct or gross negligence of Fairpard.</li>
+         </ol>
+         <br/>
+         <p>7. JURISDICTION AND GOVERNING LAW</p>
+         <p>These ToU are governed by Singapore’s law which will be applied to any claim, cause of action or dispute that might arise between you and the Fairpard irrespective to potential conflict of law provisions. By accessing and using the Fairpard you irrevocably agree to the exclusive jurisdiction and venue of courts in Singapore and stipulate to the fairness and convenience of proceedings in such courts for all disputes arising out of or relating to the use of Fairpard. You agree that all claims you may have against Fairpard arising from or relating to Fairpard must be heard and resolved in a court of competent subject matter jurisdiction located in Singapore.</p>
+         <br/>
+         <p>8. OTHER</p>
+         <p>You acknowledge and agree that it is not the purpose of ToU and/or the Fairpard to create a partnership, joint venture or similar arrangement between you and the Fairpard whereby the parties could be held jointly liable vis-a-vis third parties or for any other purposes.</p>
+         <p>ToU, together with any other terms and conditions referenced herein, constitutes the entire agreement between you and the Faipard and supersedes any and all prior agreements, understandings and arrangements, oral or written, between them with respect to the subject matter hereof.  If any provision of ToU shall be held to be invalid, illegal or unenforceable, the validity of all other provisions hereof shall in no way be affected thereby, and ToU shall be construed and be enforceable as if such invalid, illegal or unenforceable provision had not been included in this terms of use</p>
+         <p>Our performance of ToU is subject to existing laws and legal process, and nothing contained in ToU limits our right to comply with law enforcement or other governmental or legal requests or requirements relating to your use of Fairpard or information provided to or gathered by us with respect to such use. To the extent allowed by applicable law, you agree that you will bring any claim or cause of action arising from or relating to your access or use of Fairpard within two (2) years from the date on which such claim or action arose or accrued or such claim or cause of action will be irrevocably waived.</p>
+         <p>You hereby acknowledge and agree that the English version of ToU shall be the governing version and shall in all cases prevail over translation into any other language which is provided for reference only.</p>
+    why_we:
+      title: Our difference
+      content_html: |
+        <p><b>Fairpard</b> is a platform for creation and sharing of business histories – practices of doing business and interactions with specific companies, corporations or organizations.</p>
+        <br/>
+        <p>In this regard <b>Fairpard</b>:</p>
+        <ul>
+        <li>provides the platform for publication reviews on practices of doing business by B2B market players;</li>
+        <li>publishes reviews submitted by business partners and employees of the companies, corporations or organizations;</li>
+        <li>excludes from the reviews any data not related to doing business (for example, consumers’ reviews);</li>
+        <li>covers manufacturers and service providers.</li>
+        </ul>
+        <br/>
+        <p>Like credit histories, business histories help to ensure reliability, fairness and integrity of a business partner.</p>
+        <br/>
+        <p>Business histories also help the business to understand what needs to be improved to provide effectively the services or goods.</p>
+    how_it_works:
+      title: How it works
+      content_html: |
+        <ol>
+        <li>Find the respective business partner via search box of the <b>Fairpard</b>.</li>
+        <li>Read the short description, reviews and the rating of the business partner on its page.</li>
+        <li>Submit your review and evaluate the business partner accordingly to the different indicators. If you find necessary to add another indicator – just write it down on the review page.</li>
+        <li>Administrator will analyze your review. In case the review corresponds <b>Fairpard</b> Terms of Use, it will be published on the site and reflected in the partner’s rating.</li>
+        <li>If you couldn’t find the respective business partner, create his page on the <b>Fairpard</b> and become the first to publish the review.</li>
+        </ol>
+        </br>
+        <p>There is no need to register to use the <b>Fairpard</b></p>
+  shared:
+    share_buttons:
+      share_us: Share
+    footer:
+      companies: Companies
+      admin: Admin panel
+      terms: Terms of Use
+      guidlines: Review guidelines
+      privacy: Privacy Policy
+      about: About
+      contacts: Contacts
+      why_we: Why we different
+      how_it_works: How it works
+      faq: FAQ
+      language: Language
+      legal: Legal
+      content: Fairpard
+      disclaimer: Fairpard is a free service to know better how the businesses make the deals. Reviews are posted anonymously by their partners, employees and other users.
+    navigation:
+      my_reviews: My Reviews
+      new_review: New Review
+      new_company: New Company
+      account: Account
+      settings: Settings
+      signout: Sign Out
+      header_text: Fair play with fair pards – create and share business histories on Fairpard.
+  reviews:
+    new:
+      title: New review
+      keep_it_real_html: |
+        <p><b>Make it valuable</b></p>
+        <p>Thank you for your contribution. Your opinion will help other users to make better decisions about making business with partners.</p>
+        <p>
+        <b>Please post reviews that are:</b>
+        <ul>
+          <li>Honest and truthful</li>
+          <li>Original and comprehensible</li>
+          <li>Free from private information</li>
+        </ul>
+        </p>
+        <p>Thank you for making the world better through connecting fair business partners. See our <a target='_blank' href='/guidlines'>Guidelines</a> for more details.</p>
+    edit:
+      title: Continue new review editing
+      hints:
+        min_length: "%{value} chars minimum"
+      labels:
+        fairness_html: <abbr title="Rating">Rating</abbr>
+        quality_html: <abbr title="Higher the quality, higher the rating">The quality of goods (works, services)</abbr>
+        price_html: <abbr title="Applies for the business’s selling price (i.e. it sells, you buy), and buying price (i.e. it buys, you sell). More fair the price (for this the quality of goods, works or services), higher the rating">Price of goods (works, services)</abbr>
+        payments_html: <abbr title="Better the terms, higher the rating">Terms of payments/ deliveries</abbr>
+        service_html: <abbr title="How the business respects its pards. Higher the respect, higher the rating">Treatment of counterparts</abbr>
+        stability_html: <abbr title="How the business keeps to the terms of the agreed contracts. The more reliable, the higher the rating">Reliability/ Stability of the company</abbr>
+    index:
+      no_reviews: No reviews exist
+      all_reviews: All Reviews
+      overview_tab: Overview
+      reviews_tab: Reviews
+      purchase_prices_tab: Purchase Prices
+      overview: '%{company_name} Overview'
+      title: Reviews
+      add_a_review: Add a Review
+      subtitle_html: Showing <strong>%{interval}</strong> of <strong>%{total}</strong> reviews.
+  purchase_prices:
+    form:
+      submit: Create Purchase Price
+    new:
+      title: New Purchase Price
+    index:
+      title: Purchase Prices
+      no_reviews: No purcahse prices exist
+      overview_tab: Overview
+      reviews_tab: Reviews
+      purchase_prices_tab: Purchase Prices
+      add_a_purchase_price: Add a Purchase Price
+  companies:
+    rating:
+      recommended: Recommend to users
+      thankful: Thankful to the company's employees
+    search:
+      advanced_search: Advanced search
+      query: Business name
+      city: City, country
+      category: Industry
+      good: Products or services
+      search: Search
+    new:
+      title: Fill your company data
+      title_from_review: Company with this name is not exist. Fill new company data
+    show:
+      all_reviews: All Reviews
+      overview_tab: Overview
+      purchase_prices_tab: Purchase Prices
+      reviews_tab: Reviews
+      overview: '%{company_name} Overview'
+      reviews: '%{company_name} Reviews'
+      suggests: Is it your company?
+      suggest_theme: Suggest your edits
+      admin: admin
+      email: email
+      add_a_review: Add a Review
+      suggest_edits_html: Suggest changes by %{link}
+      edit_company_html: Edit this company as %{admin_link}
+    index:
+      rating: Rating
+      popularity: Popularity
+      title: Companies
+      subtitle_html: Showing <strong>%{interval}</strong> of <strong>%{total}</strong> companies.
+      info_header: Not found your business?
+      info_text_html: <strong><a href="/companies/new">Upload</a></strong> your company data.
+    company:
+      recommendations: "%{value}% recommended"
+      add_a_review: Add a Review
+  faqs:
+    index:
+      title: FAQ
+  publications:
+    new:
+      title: New publication
+    index:
+      title: Publications
+    edit:
+      link: Link
+      head: Head
+      annotation: Annotation
+      date_of_publication: Date_of_publication
+  fields:
+    place:
+      form:
+        placeholder: Enter a Location
+  devise:
+    sessions:
+      new:
+        login: Login
+  helpers:
+    submit:
+      create: Create
+      submit: Save
+      update: Update
+  admin:
+    company_aliases:
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      show:
+        edit: Edit
+      edit:
+        show: Show
+        edit: Edit
+    custom_ratings:
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      show:
+        edit: Edit
+      edit:
+        show: Show
+        edit: Edit
+    users:
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      show:
+        edit: Edit
+      edit:
+        show: Show
+        edit: Edit
+    goods:
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      show:
+        edit: Edit
+      edit:
+        show: Show
+        edit: Edit
+    cities:
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      show:
+        edit: Edit
+      edit:
+        show: Show
+        edit: Edit
+    categories:
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      show:
+        edit: Edit
+      edit:
+        show: Show
+        edit: Edit
+    purchase_prices:
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      show:
+        edit: Edit
+      edit:
+        show: Show
+        edit: Edit
+      filters:
+        title: Filters
+        filter: Filter
+        clear: Clear
+    reviews:
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      show:
+        edit: Edit
+      edit:
+        show: Show
+        edit: Edit
+      filters:
+        title: Filters
+        filter: Filter
+        clear: Clear
+    companies:
+      show:
+        public_link: Public Link
+      edit:
+        show: Show
+        edit: Edit
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      filters:
+        title: Filters
+        filter: Filter
+        clear: Clear
+    publications:
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      show:
+        edit: Edit
+      edit:
+        show: Show
+        edit: Edit
+    faqs:
+      index:
+        new: New
+      new:
+        new: New
+        back: Back
+      show:
+        edit: Edit
+      edit:
+        show: Show
+        edit: Edit
+  administrate:
+    application:
+      search:
+        placeholder: Search
+        hint: Press Enter to search

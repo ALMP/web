@@ -1,0 +1,39 @@
+nav.navbar {
+  @include radial-gradient(circle at 50% 50%, $brand-primary, lighten($brand-primary, 10%), $fallback: $brand-primary);
+}
+
+.navbar-brand {
+  user-select: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
+  margin-top: -.5rem;
+}
+
+body:not(.pages-index) {
+  .navbar {
+    border-bottom: 1rem solid white;
+  }
+}
+
+.navbar {
+  @include media-breakpoint-down(xs) { 
+    .container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: .5rem;
+  }
+
+  .side-right {
+    @media screen and (max-width: 767px){
+       position: absolute;
+       right: 0.6rem;
+    }
+    position: absolute;
+    right: -1.8rem;
+  }
+}

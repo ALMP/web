@@ -1,0 +1,10 @@
+<%= simple_nested_form_for([namespace, page.resource], wrapper: 'administrate', html: { novalidate: true, class: "form" }) do |f| %>
+ 
+  <% page.attributes.each do |attribute| -%>
+    <%= render_field attribute, f: f %>
+  <% end -%>
+
+  <div class="form-actions">
+    <%= f.submit %>
+  </div>
+<% end %>

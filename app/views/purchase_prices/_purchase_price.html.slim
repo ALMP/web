@@ -1,0 +1,14 @@
+hr.full
+= content_tag_for :div, purchase_price, class: 'media-block' do
+  .media-body
+    section
+      time.small.text-muted.pull-right
+        = time_ago_in_words purchase_price.created_at
+        span.ml-1= t('global.ago')
+      h2.m-0.p-0= purchase_price.name
+    section.pb-2
+      .row
+        .col-sm-5
+          .text-muted= purchase_price.volume
+        .col-sm-7.col-md-3.price-value
+          strong.text-warning= "$ #{purchase_price.value}"

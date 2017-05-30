@@ -1,0 +1,16 @@
+= content_for :title do
+	= display_resource_name(page.resource_name)
+	|  | 
+	= resources.total_count
+
+= content_for :search do
+	= render 'search', search_param: page.send(:dashboard).search_attribute, search_term: search_term
+
+header.header
+  h1.header__heading#page-title
+    = content_for(:title)
+  .header_actions
+  .  = link_to "#{t('.new')} #{Category.model_name.human}", [:new, namespace, page.resource_name], class: "button button-success"
+
+= render 'collection', q: q, collection_presenter: page, resources: resources
+= paginate resources

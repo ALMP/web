@@ -1,0 +1,82 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+'zh-CN':
+  devise:
+    shared:
+      links:
+        vk: 使用Vk登录
+        twitter: 使用Twitter登录
+        facebook: 使用Facebook登录
+        signup: "注册"
+        forgot_password: "忘记密码?"
+        login: "登录"
+    confirmations:
+      confirmed: "您的电子邮件地址已成功确认."
+      send_instructions: "您将通过电子邮件解释如何确认某人的电子邮件地址在几分钟内."
+      send_paranoid_instructions: "如果你的电子邮件地址存在我们的数据库，你会收到一封电子邮件，说明如何来确认你的电子邮件地址在一个几分钟."
+    failure:
+      already_authenticated: "您已经登录."
+      inactive: "您的账户是不是激活."
+      invalid: "不正确 %{authentication_keys} 或密码."
+      locked: "您的账户上锁."
+      last_attempt: "你有一个更多的尝试之前，你的账户上锁."
+      not_found_in_database: "不正确 %{authentication_keys} 或密码."
+      timeout: "您的会话已过期. 请重新登录以继续."
+      unauthenticated: "您必须先登录才能继续."
+      unconfirmed: "你必须要确认你的电子邮件地址之后再继续."
+    mailer:
+      confirmation_instructions:
+        subject: "确认指令"
+      reset_password_instructions:
+        subject: "重置的密码指令"
+      unlock_instructions:
+        subject: "解锁指令"
+      password_change:
+        subject: "密码更改"
+    omniauth_callbacks:
+      failure: "无法验证您的身份%{kind} 因 \"%{reason}\"."
+      success: "成功通过身份验证从 %{kind} 帐户."
+    passwords:
+      no_token: "你不能访问这个网页没有来自一个密码重置电子邮件. 如果你来自一个密码重置电子邮件，请确保您使用的完整的网址提供."
+      send_instructions: "您将通过电子邮件收到如何在几分钟内重置某人密码的说明."
+      send_paranoid_instructions: "如果你的电子邮件地址存在我们的数据库，将收到一个密码恢复链接你的电子邮件地址在几分钟."
+      updated: "您的密码已成功更改. 您现在已登录."
+      updated_not_active: "您的密码已成功更改."
+      new:
+        title: "忘了密码?"
+        submit: "以恢复密码"
+      edit:
+        title: "改变密码"
+        submit: "更新密码"
+    registrations:
+      new:
+        title: 注册
+        register: 报名
+      edit:
+        title: 帐户设置
+        update: 更新
+      destroyed: "再见！ 你的账户已经成功地取消. 我们希望再次见到你很快."
+      signed_up: "欢迎！ 你已经签署了成功."
+      signed_up_but_inactive: "您已成功注册. 不过，我们无法登入您的帐户，因为您的帐户尚未启用."
+      signed_up_but_locked: "你已经签署了成功. 然而，我们不能签署你因为你的帐户被锁定."
+      signed_up_but_unconfirmed: "有消息确认链路已经发送到你的电子邮件地址. 请按照链接激活你的帐户."
+      update_needs_confirmation: "您已成功更新帐户，但我们需要验证您的新电子邮件地址. 请检查您的电子邮件，并按确认链接确认您的新电子邮件地址."
+      updated: "你的账户已经成功更新."
+    sessions:
+      signed_in: "已成功登录."
+      signed_out: "已成功注销."
+      already_signed_out: "已成功注销."
+    unlocks:
+      send_instructions: "你会收到一封电子邮件，说明如何解开你的帐户在几分钟."
+      send_paranoid_instructions: "如果你的帐户存在,你将会收到一封电子邮件，说明如何解开它在几分钟."
+      unlocked: "你的账户已经解锁的成功. 请签在继续."
+  errors:
+    messages:
+      already_confirmed: "已经确认，请尝试登录"
+      confirmation_period_expired: "需要确认在 %{period}, 请求一个新的"
+      expired: "已过期，请申请新的"
+      not_found: "没有锁定"
+      not_locked: "不是锁着的"
+      not_saved:
+        one: "在注册过程中发生错误:"
+        other: "在注册过程中发生错误:"

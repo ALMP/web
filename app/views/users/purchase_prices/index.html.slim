@@ -1,0 +1,13 @@
+.container
+  .row
+    .col-sm-8.col-xs-12
+      .card.border-top-0
+        .card-block
+          h1.text-warning= t('.title')
+          = page_entries_info @purchase_prices
+          = render collection: @purchase_prices, partial: 'purchase_prices/purchase_price'
+          .pull-right= paginate @purchase_prices
+    .col-sm-4
+      .card.border-top-0.sticky
+        .card-block
+          = t('reviews.new.keep_it_real_html')

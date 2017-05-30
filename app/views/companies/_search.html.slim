@@ -1,0 +1,25 @@
+.companies-search
+  = search_form_for @q do |f|
+    .form-group.query-form-group
+      = f.text_field :term, value: params.dig(:q, :term), placeholder: t('.query'), required: 'required', autofocus: true, class: 'form-control'
+      = link_to fa_icon('search'), '#', class: 'form-submit'
+      small.pull-right.advanced-search.mr-3
+        = link_to 'javascript:;' do
+          = raw "#{t('.advanced_search')} "
+          = fa_icon 'caret-down'
+
+    - unvisible = @q.city_translations_name_eq.blank? && @q.categories_translations_name_eq.blank? && @q.goods_translations_name_eq.blank?
+    .form-group#advancedSearch style="#{unvisible && 'display: none'}"
+      .row
+        .col-sm-4
+          - cities = City.where(id: f.object.city_id_eq)
+          = f.text_field :city_translations_name_eq, class: 'form-control typeahead', placeholder: t('.city'), id: 'search_city'
+        / = f.collection_select :city_id_eq, cities, :id, :name, { include_blank: t('.city') }, { placeholder: City.model_name.human, multiple: false, class: 'select2', data: { source: url_for([:api, :v1, :cities]) } }
+        .col-sm-4
+          - categories = Category.where(id: f.object.categories_id_eq)
+          = f.text_field :categories_translations_name_eq, class: 'typeahead form-control', placeholder: t('.category'), id: 'search_category'
+        / = f.collection_select :categories_id_eq, categories, :id, :name, { include_blank: t('.category') }, { placeholder: Category.model_name.human, multiple: false, class: 'select2', data: { source: url_for([:api, :v1, :categories]) } }
+        .col-sm-4
+          - goods = Good.where(id: f.object.goods_id_eq)
+          = f.text_field :goods_translations_name_eq, class: 'form-control typeahead', placeholder: t('.good'), id: 'search_good'
+        / = f.collection_select :goods_id_eq, goods, :id, :name, { include_blank: t('.good') }, { placeholder: Good.model_name.human, multiple: false, class: 'select2', data: { source: url_for([:api, :v1, :goods]) } }

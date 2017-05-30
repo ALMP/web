@@ -1,0 +1,25 @@
+= search_form_for q, url: [:admin, :reviews], method: :get, class: :filters do |f|
+  .wrapper
+    .container
+      .header= t '.title'
+      fieldset
+        .field-unit
+          .label
+            = f.label :name_cont
+          .field
+            = f.text_field :name_cont
+      fieldset
+        .field-unit
+          .label
+            = f.label :status_eq, Review.human_attribute_name(:status)
+          .field
+            = f.select :status_eq, Review.status.options, include_blank: true
+      fieldset
+        .field-unit
+          .label
+            = f.label :created_at_lt
+          .field
+            = f.text_field :created_at_lt, class: 'datetimepicker', autocomplete: false
+    .actions
+      = link_to t('.clear'), [:admin, :reviews], class: 'button simple'
+      = f.submit t('.filter')

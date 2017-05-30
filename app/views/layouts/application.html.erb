@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="<%= Globalize.locale %>">
+  <head>
+    <%= render 'application/favicon' %>
+    <title>fairpard</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <%= metamagic_with_defaults %>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= yield :ld_json %>
+    <meta name="turbolinks-cache-control" content="no-cache">
+    <%= analytics_init if GoogleAnalytics.valid_tracker? %>
+  </head>
+
+  <body class="<%= body_class %>">
+    <%= render 'shared/navigation' %>
+    <main>
+      <%= render "shared/flashes" %>
+      <%= yield %>
+    </main>
+    <%= render "shared/footer" %>
+  </body>
+</html>

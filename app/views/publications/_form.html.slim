@@ -1,0 +1,10 @@
+= simple_nested_form_for @publication, wrapper: 'vertical_form' do |f|
+  = f.input :link, as: :string, label: t('publication.edit.link')
+  = f.input :company_name, as: :string, input_html: { class: 'typeahead' }
+  hr.full
+  = f.input :head, input_html: { rows: 1 }, label: t('publication.edit.head'), required: true
+  = f.input :annotation, input_html: { rows: 2 }, label: t('publication.edit.annotation'), required: true
+  = f.input :date_of_publication, input_html: label: t('publication.edit.date_of_publication'), required: true
+  
+  .form-actions.pull-right
+    = f.submit class: 'btn btn-action'

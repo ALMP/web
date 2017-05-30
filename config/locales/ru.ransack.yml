@@ -1,0 +1,8 @@
+ru:
+  ransack:
+    any: Любое поле
+    all: Все поля
+    combinator: Комбинатор
+    predicates:
+      cont: содержит
+      lt: не более чем

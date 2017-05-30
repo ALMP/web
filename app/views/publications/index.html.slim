@@ -1,0 +1,13 @@
+= content_tag_for :div, @company, class: 'container' do
+  .row
+    .col-sm-12
+      .row
+                
+        .col-sm-8.mt-3
+          .card
+            .card-block
+              h1.text-warning=t('.title')
+              - interval = @publications.pagination_interval
+              = page_entries_info @publications, no_entries: '.no_publications'
+              = render collection: @publications, partial: 'publications/publication'
+              

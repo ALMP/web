@@ -1,0 +1,12 @@
+- if field.data.present?
+  hr
+  .field-unit
+    .field-unit__label
+      = f.label :logo_preview
+    .field-unit__field
+      = image_tag field.data, class: 'preview'
+
+= f.input field.attribute, as: :file, wrapper: :administrate
+- if field.data.present?
+  = f.input "remove_#{field.attribute}", as: :boolean
+  hr

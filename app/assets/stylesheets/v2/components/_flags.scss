@@ -1,0 +1,22 @@
+.img-flag {
+  width: 1.25rem;
+  height: 1rem;
+  margin-top: -.3rem;
+}
+
+.locale_selector
+{
+  .select2-container--bootstrap .select2-selection {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+  }
+
+  .select2-container--bootstrap.select2-container--focus .select2-selection, .select2-container--bootstrap.select2-container--open .select2-selection {
+    box-shadow: none;
+  }
+
+  .select2-dropdown {
+    border: none;
+  }
+}

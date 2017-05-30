@@ -1,0 +1,16 @@
+= content_for :title do
+	= display_resource_name(page.resource_name)
+	|  | 
+	= resources.total_count
+
+= content_for :search do
+	= render 'search', search_param: page.send(:dashboard).search_attribute, search_term: search_term
+
+header.header
+  h1.header__heading#page-title
+    = content_for(:title)
+  .header_actions
+
+
+= render 'collection', q: q, collection_presenter: page, resources: resources
+= paginate resources

@@ -1,0 +1,13 @@
+= simple_form_for @company, html: { class: 'form-horizontal', multipart: true }, wrapper: 'vertical_form' do |f|
+  = f.input :name, as: :string, readonly: params[:company_name].present?
+  = f.input :url, as: :string
+  = f.input :email, as: :email
+  = f.input :phone
+  = f.association :categories, collection: f.object.categories, input_html: { class: 'select2', data: {source: url_for([:api, :v1, :categories])} }
+  = f.association :goods, collection: f.object.goods, input_html: { class: 'select2', data: {source: url_for([:api, :v1, :goods])} }
+  = f.association :city, collection: [f.object.city], input_html: { class: 'select2', data: {source: url_for([:api, :v1, :cities])} }
+  = f.input :address, required: true
+  = f.input :description, input_html: { rows: 5 }
+ 
+  .form-actions.pull-right
+    = f.submit class: 'btn btn-action'

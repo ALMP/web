@@ -1,0 +1,32 @@
+.media-block {
+  display: -ms-flexbox;
+  align-items: flex-start;
+}
+.font-size-3 {
+  font-size: 3rem;
+  margin-top: -.125em;
+}
+.word-border{
+  word-wrap: break-word;
+}
+.text-action {
+  color: $brand-action;
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+.pages{
+  p{
+  text-align: justify;
+  text-indent: 30px;
+  }
+  li{
+    text-align: justify;
+  }
+}
+.border-right {
+  @media only screen and (min-width: #{map-get($grid-breakpoints, md)}) {
+    border-right: 1px solid rgba(0, 0, 0, 0.125)
+  }
+}

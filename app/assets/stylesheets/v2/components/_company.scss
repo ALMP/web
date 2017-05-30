@@ -1,0 +1,39 @@
+.company {
+  .stars {
+    font-size: 1.44rem;
+  }
+
+  img.bar {
+    height: 3.5rem;
+  }
+
+  img.logo {
+    width: 5rem;
+    height: 100%;
+    @extend .bg-white;
+
+    &.fixed {
+      height: 5rem;
+    }
+  }
+
+  .media.title {
+    @media only screen and (max-width: #{map-get($grid-breakpoints, md)}) {
+      margin-top: -.75rem;
+    }
+
+
+    margin-top: -2.5rem;
+
+    h1 {
+      padding-top: 3rem;
+    }
+  }
+  .nav-link {
+    height: calc(100% + .75rem);
+
+    &:hover {
+      @extend .border-bottom-0;
+    }
+  }
+}

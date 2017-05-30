@@ -1,0 +1,28 @@
+table {
+  border-collapse: separate;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid shade($base-border-color, 25%);
+  text-align: left;
+}
+
+th,
+td {
+  padding: $small-spacing;
+  vertical-align: middle;
+}
+
+td {
+  border-bottom: $base-border;
+  font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures, contextual;
+  font-variant-numeric: lining-nums, tabular-nums;
+  overflow: hidden;
+	min-width: 2em;
+	max-width: 30em;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}

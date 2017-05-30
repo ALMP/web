@@ -1,0 +1,29 @@
+- all_reviews = company.reviews.confirmed
+- rating = company.rating.round(2)
+.tooltip-templates.d-none
+  div[id="company-details-#{company.id}"]
+    .small.text-muted= Review.human_attribute_name(:fairness)
+    .text-warning= stars company.fairness
+    .small.text-muted= Review.human_attribute_name(:service)
+    .text-warning= stars company.service
+    .small.text-muted= Review.human_attribute_name(:quality)
+    .text-warning= stars company.quality
+    .small.text-muted= Review.human_attribute_name(:payments)
+    .text-warning= stars company.payments
+    .text-muted.small= Review.human_attribute_name(:stability)
+    .text-warning= stars company.stability
+    .small.text-muted= Company.human_attribute_name(:other)
+    .text-warning= stars company.other
+p.text-center.text-warning
+  span.stars
+    span.text-warning.font-weight-bold= company.rating.round(2)
+    = stars rating, data: { 'tooltip-content' => "#company-details-#{company.id}"}, class: 'tooltipster font-weight-bold text-warning ml-2'
+p
+  .container
+    .row.justify-content-center
+      .col-sm-6
+        .percircle.small[data-percent=company.recommended]
+        .mt-3= t '.recommended'
+      .col-sm-6
+        .percircle.small[data-percent=company.thankful]
+        .mt-3= t '.thankful'

@@ -1,0 +1,31 @@
+= simple_nested_form_for @review, wrapper: 'vertical_form' do |f|
+  = f.input :name, as: :string, label: Review.human_attribute_name(:name)
+  = f.input :company_name, as: :string, input_html: { class: 'typeahead' }
+  hr.full
+  = f.input :category
+  = f.input :advantages, input_html: { rows: 3 }, hint: t('reviews.edit.hints.min_length', value: 50), required: true
+  = f.input :disadvantages, input_html: { rows: 3 }, hint: t('reviews.edit.hints.min_length', value: 50), required: true
+  = f.input :recommendations, input_html: { rows: 3 }
+  hr.full
+  = f.input :fairness, as: :stars, label: t('reviews.edit.labels.fairness_html'), wrapper: :stars_form
+  = f.input :quality, as: :stars, label: t('reviews.edit.labels.quality_html'), wrapper: :stars_form
+  = f.input :payments, as: :stars, label: t('reviews.edit.labels.payments_html'), wrapper: :stars_form
+  = f.input :service, as: :stars, label: t('reviews.edit.labels.service_html'), wrapper: :stars_form
+  = f.input :stability, as: :stars, label: t('reviews.edit..labels.stability_html'), wrapper: :stars_form
+  = f.fields_for :custom_rating, (f.object.custom_rating || f.object.build_custom_rating) do |cr_f|
+    - input = cr_f.input_field :title, label: false, placeholder: CustomRating.human_attribute_name(:title_details), class: 'form-control', required: false
+    = cr_f.input :value, as: :stars, label: input, required: false, wrapper: :stars_form
+  hr.full
+  .row
+    .col-12
+      = f.input :thankful, inline_label: true, label: false, wrapper_html: { data: { inline: true }, class: 'font-weight-bold' }, input_html: { class: 'mr-1' }
+  .row
+    .col-12
+      = f.input :recommended, inline_label: true, label: false, wrapper_html: { data: { inline: true }, class: 'font-weight-bold' }, input_html: { class: 'mr-1' }
+  hr.full
+  .row
+    .col-12
+      = f.input :terms_of_use_confirmed, inline_label: true, label: false, wrapper_html: { data: { inline: true }, class: 'font-weight-bold' }, required: true, input_html: { class: 'mr-1' }
+
+  .form-actions.pull-right
+    = f.submit class: 'btn btn-action'

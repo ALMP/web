@@ -1,0 +1,8 @@
+- data = field.data
+- if data
+  - if field.send(:options)[:class_name].present?
+    - data = data.becomes(field.send(:options)[:class_name].constantize)
+  = link_to [namespace, data] do
+    = stars data.value
+- else
+  span -

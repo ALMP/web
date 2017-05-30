@@ -1,0 +1,15 @@
+.container
+  .row
+    .col-sm-8.col-xs-12
+      .card.border-top-0
+        list-group.list-group-flush
+          .list-group-item
+            h1.text-warning = t '.title'
+          
+          .list-group-item
+            = render @faqs
+
+    .sidebar.col-sm-4.hidden-xs-down
+      .sticky.card.border-top-0
+        .card-block
+          = render 'shared/share_buttons'

@@ -1,0 +1,35 @@
+en:
+  flash:
+    actions:
+      approve:
+        success: "%{resource_name} was successfully approved."
+      decline:
+        success: "%{resource_name} was successfully declined."
+      create:
+        success: "%{resource_name} was successfully created."
+      update:
+        success: "%{resource_name} was successfully updated."
+      destroy:
+        success: "%{resource_name} was successfully deleted."
+        error: "%{resource_name} was not successfully deleted."
+    reviews:
+      update:
+        success: "%{resource_name} was successfully published."
+    users:
+      registrations:
+        create:
+          success: "Welcome. Signed up successfully."
+          error: "Can't sign up."
+        update:
+          success: "Your profile was successfully updated."
+          error: "Your profile wasn't updated"
+      sessions:
+        create:
+          success: "Signed in successfully."
+          error: "Can't sign in."
+        destroy:
+          success: "Signed out successfully."
+      passwords:
+        create:
+          success: "You will receive an email with instructions on how to reset your password in a few minutes."
+          error: "User not found."

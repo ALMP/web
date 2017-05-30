@@ -1,0 +1,14 @@
+.container
+  .row
+    .col-sm-8.col-xs-12
+      .card.border-top-0
+        .card-block
+          h1.text-warning= t('.title')
+          - interval = @reviews.pagination_interval
+          = page_entries_info @reviews
+          = render collection: @reviews, partial: 'reviews/review'
+          .pull-right= paginate @reviews
+    .col-sm-4
+      .card.border-top-0.sticky
+        .card-block
+          = t('reviews.new.keep_it_real_html')

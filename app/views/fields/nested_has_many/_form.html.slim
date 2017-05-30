@@ -1,0 +1,14 @@
+hr
+.field-unit
+  .field-unit__label
+    = f.label f.object.class.human_attribute_name(field.attribute)
+  .field-unit__field
+    = f.link_to_add fa_icon('plus'), field.association_name, data: {target: "##{field.association_name}"}
+
+.nested id=field.association_name
+  = f.simple_fields_for field.attribute do |nf|
+
+    = render 'fields/nested_has_many/fields',
+        f: nf,
+        field: field
+hr

@@ -1,0 +1,2 @@
+- locale = field.send(:options)[:locale] || I18n.locale
+= f.input field.attribute, input_html: { class: 'placepicker', placeholder: t('.placeholder', locale: locale) }

@@ -1,0 +1,60 @@
+<%= cache [:footer, current_user_cache_prefix] do %>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <li>
+              <h3>
+                <%= t '.content' %>
+              </h3>
+            </li>
+            <li>
+              <%= link_to t('.about'), about_url, class: 'text-muted' %>
+            </li>
+            <li>
+              <%= link_to t('.contacts'), contacts_url, class: 'text-muted' %>
+            </li>
+            <li>
+              <%= link_to t('.why_we'), why_we_url, class: 'text-muted' %>
+            </li>
+            <li>
+              <%= link_to t('.how_it_works'), how_it_works_url, class: 'text-muted' %>
+            </li>
+            <li>
+              <%= link_to t('.faq'), faqs_path, class: 'text-muted' %>
+            </li>
+            <%- if current_user&.admin? %>
+              <%= link_to t('.admin'), admin_root_url, class: 'text-muted' %>
+            <% end %>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <%= render 'shared/share_buttons' %>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <li><h3><%= t '.legal' %></h3></li>
+            <li><a class="text-muted" href="<%= terms_url %>"><%= t('.terms') %></a></li>
+            <li><a class="text-muted" href="<%= privacy_url %>"><%= t('.privacy') %></a></li>
+            <li><a class="text-muted" href="<%= guidlines_url %>"><%= t('.guidlines') %></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-3">
+          <hr>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-6" align="center">
+          <small class="text-muted">
+            <%= t '.disclaimer' %>
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+<% end %>

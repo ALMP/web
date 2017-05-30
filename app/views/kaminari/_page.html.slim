@@ -1,0 +1,5 @@
+li class="page-item page#{' active' if page.current?}"
+  - if page.current?
+    = link_to page, "#", class: 'page-link'
+  - else
+    = link_to_unless page.current?, page, url, remote: remote, rel: (page.next? ? 'next' : page.prev? ? 'prev' : nil), class: 'page-link'

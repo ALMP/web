@@ -1,0 +1,65 @@
+hr.full
+= content_tag_for :div, review, class: 'media-block' do
+  .media-body
+    section
+      time.small.text-muted.pull-right
+        = time_ago_in_words review.created_at
+        span.ml-1= t('global.ago')
+      h2.m-0.p-0= review.name
+    section.pb-2
+      .tooltip-templates.d-none
+        div id="stars-details-#{review.id}"
+          .small.text-muted= Review.human_attribute_name(:fairness)
+          .text-warning= stars review.fairness
+          .small.text-muted= Review.human_attribute_name(:service)
+          .text-warning= stars review.service
+          .small.text-muted= Review.human_attribute_name(:quality)
+          .text-warning= stars review.quality
+          .small.text-muted= Review.human_attribute_name(:payments)
+          .text-warning= stars review.payments
+          .small.text-muted= Review.human_attribute_name(:stability)
+          .text-warning= stars review.stability
+          - if review.custom_rating
+            .small.text-muted= review.custom_rating.title
+            .text-warning= stars review.custom_rating.value
+      span.text-warning
+        = stars review.rating, data: {'tooltip-content' => "#stars-details-#{review.id}" }, class: 'tooltipster'
+      span.text-muted.small.ml-4= review.category.text
+    - if review.with_questions?
+      section.pb-1
+        - if review.recommended?
+          = square class: 'bg-success', text: Review.human_attribute_name(:recommended)
+        - if review.thankful?
+          = square class: 'bg-success', text: Review.human_attribute_name(:thankful)
+    - if review.with_text?
+      section.word-border
+        - if review.advantages.present?
+          .pull-right.small
+            = link_to 'javascript:void(0)', data: {translatable: "#review_#{review.id} p.advantages"}, class: 'js-translate' do
+              = t("global.translate")
+              span.spinner.d-none
+                .bounce1
+                .bounce2
+                .bounce3
+          strong= Review.human_attribute_name(:advantages)
+          p.advantages= review.advantages
+        - if review.disadvantages.present?
+          .pull-right.small
+            = link_to 'javascript:void(0)', data: {translatable: "#review_#{review.id} p.disadvantages"}, class: 'js-translate' do
+              = t("global.translate")
+              span.spinner.d-none
+                .bounce1
+                .bounce2
+                .bounce3
+          strong= Review.human_attribute_name(:disadvantages)
+          p.disadvantages= review.advantages
+        - if review.recommendations.present?
+          .pull-right.small
+            = link_to 'javascript:void(0)', data: {translatable: "#review_#{review.id} p.recommendations"}, class: 'js-translate' do
+              = t("global.translate")
+              span.spinner.d-none
+                .bounce1
+                .bounce2
+                .bounce3
+          strong= Review.human_attribute_name(:recommendations)
+          p.disadvantages= review.recommendations

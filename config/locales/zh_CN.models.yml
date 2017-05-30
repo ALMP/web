@@ -1,0 +1,116 @@
+'zh-CN':
+  enumerize:
+    review:
+      category:
+        current_buyer: 现行买者/提供商
+        former_buyer: 前买主/提供商
+        potential_buyer: 潜力买者/提供商
+        operating_officer: 现行雇员
+        former_employee: 前雇员
+      status:
+        blank: 在建立的过程中
+        pending: 等待确认
+        declined: 拒绝
+        confirmed: 发表
+    user:
+      type:
+         AdminUser: 管理员
+         User: 普通用户
+  activerecord:
+
+    models:
+      review:
+        one: 评语
+        zero: 评语
+        other: 评语
+      user:
+        one: 用户
+        zero: 用户
+        other: 用户
+      company:
+        one: 公司
+        zero: 公司
+        other: 公司
+      city:
+        one: 城市
+        zero: 城市
+        other: 城市
+      category:
+        one: 行业
+        zero: 行业
+        other: 行业
+      good:
+        one: 货物
+        zero: 货物
+        other: 货物
+    attributes:
+      user:
+        email: 电子邮件
+        password: 密码
+        remember_me: 记得
+      good:
+        name: 名称
+        name_en: 名称 (英语)
+        name_ru: 名称 (俄语)
+        name_zh_cn: 名称 (汉语)
+      category:
+        name: 名称
+        name_en: 名称 (英语)
+        name_ru: 名称 (俄语)
+        name_zh_cn: 名称 (汉语)
+      city:
+        name: 名称
+        name_en: 名称 (英语)
+        name_ru: 名称 (俄语)
+        name_zh_cn: 名称 (汉语)
+      user:
+        email: 电子邮件
+        type: 角色
+        new_password: 新密码
+        last_sign_in_at: 上次登录时间
+        sign_in_count: 登录数
+        created_at: 创建时间
+        social_networks: 社交网络
+      company:
+        logo: 标志
+        name: 名称
+        url: 该网站
+        email: 电子邮件
+        phone: 电话号码
+        goods: 货物
+        categories: 行业
+        city: "城市, 国"
+        address: 地址
+        zipcode: 邮政编码
+        created_at: 创建时间
+        updated_at: 上次更新时间
+        confirmed_reviews_count: 评语数
+        rating: 评级
+        logo_preview: 预览
+        description: 描述
+        remove_logo: 删除?
+      custom_rating:
+        title: 其他
+        title_details: 其他 - 指定
+      review:
+        rating: 评级
+        advantages: 优点
+        disadvantages: 缺点
+        recommendations: 建议管理层和其他用户
+        thankful: 为感谢公司的员工
+        recommended: 推荐其他用户
+        category: 地位
+        name: 名称
+        company_name: 公司
+        company: 公司
+        quality: 商品质量 (工作, 服务)
+        payments: 付款和交货条件
+        service: 服务程度买主/提供商
+        stability: 该公司的可靠性/稳定性
+        created_at: 创建时间
+        status: 地位
+        terms_of_use_confirmed: 用户协议的确认
+        name: 名称
+        user: 作者
+        company_name: 公司
+        company: 公司

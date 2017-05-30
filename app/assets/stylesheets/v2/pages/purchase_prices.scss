@@ -1,0 +1,8 @@
+.purchase_prices {
+  .price-value {
+    @media only screen and (min-width: #{map-get($grid-breakpoints, md)}) {
+      margin-top: -1rem;
+      text-align: right;
+    }
+  }
+}

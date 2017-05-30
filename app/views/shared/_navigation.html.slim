@@ -1,0 +1,35 @@
+.container
+  .row.text-center.my-3
+    .col-12
+      = t('.header_text')
+      = image_tag('logo-blue.svg', class: "ml-2", alt: '', size: '30')
+
+nav.navbar.navbar-toggleable-sm.bg-primary.navbar-inverse.navbar-dark
+  .container
+    button.navbar-toggler.navbar-toggler-right type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+      span.navbar-toggler-icon
+    = link_to image_tag('logo.svg', class: "mr-3 mb-1", alt: '', size: '30') + 'fairpard', root_path, class: 'navbar-brand'
+    ul.navbar-nav.hidden-md-down
+      li.nav-item
+        = link_to t('.home'), root_path, class: 'nav-link'
+    .collapse.navbar-collapse#navbarText.justify-content-end
+      ul.navbar-nav
+        li.nav-item
+          = link_to t('.new_review'), new_review_path, class: 'nav-link'
+        li.nav-item
+          = link_to t('.new_company'), new_company_path, class: 'nav-link'
+        li.nav-item
+          - if signed_in?
+            li.nav-item.dropdown
+              = link_to t('.account'), '#', class: 'nav-link dropdown-toggle', id: 'accountDropdown', data: { toggle: 'dropdown' }
+              .dropdown-menu#accountDropdown
+                = link_to t('.my_reviews'), user_reviews_path(current_user), class: 'dropdown-item'
+                = link_to t('.my_purchase_prices'), user_purchase_prices_path(current_user), class: 'dropdown-item'
+                = link_to t('.settings'), edit_user_registration_path, class: 'dropdown-item'
+          li.nav-item
+            - if signed_in?
+              = link_to t('.signout'), destroy_user_session_path, method: :delete, class: 'nav-link'
+            - else
+              = link_to t('devise.sessions.new.login'), new_user_session_path, class: 'nav-link'
+          li.nav-item.mt-1.side-right.locale_selector
+            = render 'shared/locale_select'

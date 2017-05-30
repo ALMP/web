@@ -1,0 +1,63 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+$stdout.sync = true
+
+require 'bundler/setup'
+require 'commander/import'
+require 'alibaba_suppliers_parser'
+require 'terminal-table'
+
+program :name, 'Alibaba suppliers parser'
+program :version, '0.1.0'
+program :description, 'Parse alibaba suppliers and save them in redis.'
+
+command :prepare do |c|
+  c.description = 'Check all connections and create tags list'
+
+  c.action do |_args, _options|
+    say 'prepare start'
+  end
+end
+
+command :demo do |c|
+  c.description = 'Make requests to test pages and show data'
+
+  c.action do |_args, _options|
+    AlibabaSuppliersParser::Showcase.run
+  end
+end
+
+command :prepare do |c|
+  c.description = 'Populate database with tags urls'
+
+  c.action do |_args, _options|
+    AlibabaSuppliersParser::Runner.prepare
+    AlibabaSuppliersParser::Stat.run
+  end
+end
+
+command :run do |c|
+  c.description = 'Run queues process. Available commands: tags, urls, save'
+
+  c.action do |args, _options|
+    AlibabaSuppliersParser::Runner.run args[0]
+  end
+end
+
+command :stat do |c|
+  c.description = 'Displayed save information info'
+
+  c.action do |_args|
+    AlibabaSuppliersParser::Stat.run
+  end
+end
+
+command :flush do |c|
+  c.description = 'Delete all data from redis'
+  c.option '--all', 'Delete prepared data too'
+
+  c.action do |_args, options|
+    AlibabaSuppliersParser::Clear.run(options)
+    AlibabaSuppliersParser::Stat.run
+  end
+end

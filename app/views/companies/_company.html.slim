@@ -1,0 +1,22 @@
+hr.full
+  = content_tag_for :div, company, class: 'media' do
+    .media.w-100
+      - if company.logo.present?
+        .d-flex.mr-3
+          = link_to company do
+            = image_tag company.logo.url, class: 'logo img-thumbnail'
+      .media-body
+        section
+          h2= link_to company.name, company
+          p.mb-1= content_tag :a, company.url, href: company.source.url, target: '_blank', class: 'text-muted'
+          p.mb-1.text-muted= company.city
+          p.mb-1
+            span.stars
+              span.text-warning.font-weight-bold= company.rating.round(2)
+              = stars company.rating.round(2), class: 'ml-2 text-warning font-weight-bold'
+            small.text-muted.ml-2= t('.recommendations', value: company.recommended.to_i)
+      .d-flex.hidden-sm-down
+        = link_to t('.add_a_review'), new_review_path(company_name: company.name), class: 'btn btn-action'
+  - if company.last_review.present?
+    section.m-3
+      = render company.last_review

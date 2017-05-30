@@ -1,0 +1,8 @@
+'zh-CN':
+  ransack:
+    any: 任何领域
+    all: 所有字段
+    combinator: 战略家
+    predicates:
+      cont: 包含
+      lt: 不超过

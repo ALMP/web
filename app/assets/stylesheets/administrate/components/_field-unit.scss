@@ -1,0 +1,52 @@
+.field-unit {
+  @include clearfix;
+  @include fill-parent;
+  align-items: center;
+  display: flex;
+  margin-bottom: $base-spacing;
+  position: relative;
+
+  &[data-inline] {
+    .field-unit__field {
+      @include shift(2);
+    }
+  }
+}
+
+.nested {
+  .field-unit--errors {
+    input {
+      border-color: #dfe0e1;
+      &:focus,
+      &:active {
+        border-color: #2a94d6;  
+      }
+    }
+  }
+}
+
+.field-unit--errors {
+  input {
+    border-color: $light-red;
+  }
+
+  .error {
+    color: $light-red;
+  }
+ 
+  .hint {
+    color: $grey-2;
+    text-align: right;
+    font-size: .75em;
+  }
+}
+
+.field-unit__label {
+  @include span-columns(2 of 12);
+  text-align: right;
+}
+
+.field-unit__field {
+  line-height: 1.4;
+  @include span-columns(5 of 12);
+}

@@ -1,0 +1,104 @@
+= content_for :ld_json do
+  script type="application/ld+json"
+    = raw @presented_company.to_structured_data(url: company_url(@company))
+
+= content_tag_for :div, @company, class: 'container' do
+  .row
+    .col-sm-12
+      .row
+        .col-sm-12
+          = image_tag image_path('company-background.jpg'), class: 'w-100 bar hidden-sm-down'
+        .col-sm-12
+          .card.border-top-0.border-bottom-0
+            .card-block
+              .media.title
+                .d-flex.mr-3
+                  = image_tag @presented_company.logo.url, class: 'logo fixed img-thumbnail'
+                .media-body
+                  h1.mt-0.text-warning= @presented_company.name 
+        .col-sm-12
+          .card.border-top-0
+            .card-block.pt-0
+              .pull-right
+                = link_to t('.add_a_review'), new_review_path(company_name: @company.name), class: 'btn btn-action'
+              ul.nav.nav-tabs.border-bottom-0
+                li.nav-item
+                  = link_to t('.overview_tab'), @company, class: 'nav-link active'
+                li.nav-item
+                  = link_to t('.reviews_tab'), [@company, :reviews], class: 'nav-link'
+                li.nav-item
+                  = link_to t('.purchase_prices_tab'), [@company, :purchase_prices], class: 'nav-link'
+        .col-sm-8.mt-3
+          .card
+            .card-block
+              h5= t('.overview', company_name: @presented_company.name)
+              .row
+                .col-md-12
+                  dl.mb-0.d-flex.justify-content-between
+                    dt= Company.human_attribute_name :url
+                    - if @company.url.blank?
+                      dd.text-right= CompanyPresenter::NA
+                    - else
+                      dd.text-right= auto_link @company.url, html: { target: '_blank' }
+                  dl.mb-0.d-flex.justify-content-between
+                    dt= Company.human_attribute_name :email
+                    dd.text-right= @presented_company.email
+                  dl.mb-0.d-flex.justify-content-between
+                    dt= Company.human_attribute_name :phone
+                    dd.text-right= @presented_company.phone
+                  dl.mb-0.d-flex.justify-content-between
+                    dt= Company.human_attribute_name :city
+                    dd.text-right= @presented_company.city
+                  dl.mb-0.d-flex.justify-content-between
+                    dt= Company.human_attribute_name :zipcode
+                    dd.text-right= @presented_company.zipcode
+                  dl.mb-0.d-flex.justify-content-between
+                    dt= Company.human_attribute_name :categories
+                    dd.text-right= @presented_company.categories
+                  dl.mb-0.d-flex.justify-content-between
+                    dt= Company.human_attribute_name :goods
+                    dd.text-right= @presented_company.goods
+                  dl.mb-0.d-flex.justify-content-between
+                    dt= Company.human_attribute_name :address
+                    dd.text-right= @presented_company.address
+                - if @presented_company.description.present?
+                  .col-md-12.mt-3
+                    .small
+                      = link_to 'javascript:void(0)', data: {translatable: '.description'}, class: 'js-translate' do
+                        = t("global.translate")
+                        span.spinner.d-none
+                          .bounce1
+                          .bounce2
+                          .bounce3
+                    p.description.readmore= @presented_company.description
+        .col-sm-4.mt-3
+          .card.sticky
+            .card-block
+              .media
+                .d-flex.mr-2
+                  .font-size-3.text-action= fa_icon 'building-o'
+                .media-body
+                  - admin_email = Rails.application.secrets.admin_email
+                  - email_link = link_to "mailto:#{admin_email}?subject=#{t('.suggest_theme')}" do
+                    strong= t('.email')
+                  p.mb-1= t('.suggest_edits_html', link: email_link)
+                  - if current_user&.admin?
+                    - edit_link = link_to([:edit, :admin, @company]) do
+                      strong= t('.admin')
+                    p= t('.edit_company_html', admin_link: edit_link)
+                    p= t('publications.index.title')
+                    .pull-left.small.mt-1
+                      = render @company.publications.limit(10)
+        .col-sm-8.mt-3
+          .card
+            .card-block
+              .pull-right.small.mt-1
+                = link_to [@company, :reviews] do
+                  span= t '.all_reviews'
+                  span.ml-1= fa_icon 'chevron-right'
+              h5= t('.reviews', company_name: @presented_company.name)
+              section
+                = render 'companies/rating', company: @presented_company
+              - if @company.last_review.present?
+                section.m-3
+                  = render @company.last_review

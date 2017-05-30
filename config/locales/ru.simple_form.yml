@@ -1,0 +1,13 @@
+ru:
+  simple_form:
+    "yes": 'Да'
+    "no": 'Нет'
+    required:
+      text: 'обязательное'
+      mark: '*'
+    labels:
+      defaults:
+        name: 'Название'
+        name_en: 'Название (англ.)'
+        name_ru: 'Название (рус.)'
+        name_zh_cn: 'Название (кит.)'

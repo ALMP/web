@@ -1,0 +1,10 @@
+.container
+  .row
+    .col-sm-8.col-xs-12
+      .card.border-top-0
+        .card-block
+          - if params[:company_name].present?
+            h1.text-warning= t('.title_from_review')
+          - else
+            h1.text-warning= t('.title')
+          = render 'form'

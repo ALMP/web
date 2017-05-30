@@ -1,0 +1,26 @@
+<%#
+# Form Partial
+
+This partial is rendered on a resource's `new` and `edit` pages,
+and renders all form fields for a resource's editable attributes.
+
+## Local variables:
+
+- `page`:
+  An instance of [Administrate::Page::Form][1].
+  Contains helper methods to display a form,
+  and knows which attributes should be displayed in the resource's form.
+
+[1]: http://www.rubydoc.info/gems/administrate/Administrate/Page/Form
+%>
+
+<%= simple_nested_form_for([namespace, page.resource], wrapper: 'administrate', html: { novalidate: true, class: "form", multipart: true}) do |f| %>
+ 
+  <% page.attributes.each do |attribute| -%>
+    <%= render_field attribute, f: f, page: page %>
+  <% end -%>
+
+  <div class="form-actions">
+    <%= f.submit %>
+  </div>
+<% end %>

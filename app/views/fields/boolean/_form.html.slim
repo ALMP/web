@@ -1,0 +1,6 @@
+- inline = field.send(:options)[:inline]
+
+- if inline
+  = f.input field.name, as: :boolean, inline_label: true, label: false, wrapper_html: { data: { inline: true }}, wrapper: :administrate
+- else
+  = f.input field.name, as: :boolean, wrapper: :administrate

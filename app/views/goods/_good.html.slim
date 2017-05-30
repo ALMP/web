@@ -1,0 +1,7 @@
+hr.full
+= content_tag_for :div, good, class: 'media' do
+  .media-body
+    section
+      small.text-muted.pull-right
+        span.ml-1= t('.companies', count: good.companies_count )
+      h2= link_to good.name.gsub(/\u00A0/i, "").humanize, good

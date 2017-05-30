@@ -1,0 +1,15 @@
+.companies.companies-index {
+  .companies-search {
+
+    #advancedSearch {
+      @extend .mb-0;
+
+      .col-sm-4 {
+        & > span {
+          // margin-left: 1px;
+          // width: calc(100% - 1px);
+        }
+      }
+    }
+  }
+}

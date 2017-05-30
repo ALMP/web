@@ -1,0 +1,224 @@
+ru:
+  enumerize:
+    purchase_price:
+      status:
+        pending: Ожидает подтверждения
+        declined: Отклонен
+        confirmed: Опубликованный
+      kind:
+        goods: Товары
+        work: Работa
+        service: Услуга
+      unit:
+        item: штук
+        meter: метр
+        long_meter: погонный метр
+        kg: кг
+        liter: литр
+        carat: карат
+        pound: фунт
+        ounce: унция
+        foot: фут
+        inch: дюйм
+        gallon: галлон
+        cubic_meter: куб. метр
+        hour: час
+        day: день
+        project: проект
+    review:
+      category:
+        current_buyer: Действующий покупатель/поставщик
+        former_buyer: Бывший покупатель/поставщик
+        potential_buyer: Потенциальный покупатель/поставщик
+        operating_officer: Действующий сотрудник
+        former_employee: Бывший сотрудник
+      status:
+        pending: Ожидает подтверждения
+        declined: Отклонен
+        confirmed: Опубликованный
+    user:
+      type:
+         AdminUser: Администратор
+         User: Обычный
+  activerecord:
+    errors:
+      models:
+        review:
+          attributes:
+            company_name:
+              not_exists: не существует
+    models:
+      purchase_price:
+        one: Закупочная цена
+        many: Закупочных цен
+        other: Закупочных цен
+        few: Закупочные цены
+        zero: Закупочные цены
+      company_alias:
+        one: Сокращенное название
+        many: Сокращенных названий
+        other: Сокращенных названий
+        few: Сокращенных названия
+        zero: Сокращенные названия
+      custom_rating:
+        one: Пользовательский рейтинг
+        many: Пользовательских рейтингов
+        other: Пользовательских рейтингов
+        few: Пользовательских рейтинга
+        zero: Пользовательские рейтинги
+      review:
+        one: Отзыв
+        many: Отзывов
+        other: Отзывов
+        few: Отзыва
+        zero: Отзывы
+      user:
+        one: Пользователь
+        many: Пользователей
+        other: Пользователей
+        few: Пользователя
+        zero: Пользователи
+      company:
+        one: Компания
+        many: Компаний
+        other: Компаний
+        few: Компании
+        zero: Компании
+      city:
+        one: Город
+        many: Городов
+        other: Городов
+        few: Города
+        zero: Городa
+      category:
+        one: Индустрия
+        many: Индустрий
+        other: Индустрий
+        few: Индустрии
+        zero: Индустрии
+      good:
+        one: Товар/услуга
+        many: Товаров и услуг
+        other: Товаров и услуг
+        few: Товара и услуги
+        zero: Товары и услуги
+      publication:
+        one: Публикация
+        many: Публикации
+        other: Публикаций   
+        few: Публикации
+        zero: Публикации
+      faq:
+        one: Вопрос и ответ
+        many: Вопросы и ответы
+        other: Вопросы и ответы
+        few: Вопросы и ответы
+        zero: Вопросы и ответы
+    attributes:
+      good:
+        name: Название
+        name_en: Название (англ.)
+        name_ru: Название (рус.)
+        name_zh_cn: Название (кит.)
+      category:
+        name: Название
+        name_en: Название (англ.)
+        name_ru: Название (рус.)
+        name_zh_cn: Название (кит.)
+      city:
+        name: Название
+        name_en: Название (англ.)
+        name_ru: Название (рус.)
+        name_zh_cn: Название (кит.)
+      user:
+        email: Эл. Почта
+        password: Пароль
+        remember_me: Запомнить
+        recommendator: Кто порекомендовал нас?
+        email: Email
+        type: Роль
+        new_password: Новый пароль
+        last_sign_in_at: Время последнего входа
+        sign_in_count: Кол-во логинов
+        created_at: Время создания
+        social_networks: Социальные сети
+      company:
+        logo: Логотип
+        company_aliases: Сокращенныe наименования
+        aliases: Сокращенныe наименования
+        name: Название
+        url: Сайт
+        email: Email
+        phone: Телефон
+        goods: Товары и услуги
+        categories: Индустрия
+        city: "Город, Страна"
+        address: Адрес
+        zipcode: Почтовый индекс
+        created_at: Время создания
+        updated_at: Время последнего обновления
+        confirmed_reviews_count: Кол-во отзывов
+        rating: Рейтинг
+        logo_preview: Предпросмотр
+        description: Описание
+        remove_logo: Удалить?
+        other: Другое
+      company_alias:
+        name: Название
+        company: Компания
+      custom_rating:
+        title: Другое
+        review: Отзыв
+        title_details: Другое - укажите
+        value: Значение
+      review:
+        rating: Рейтинг
+        custom_rating: Пользовательский рейтинг
+        advantages: Плюсы
+        disadvantages: Минусы
+        recommendations: Рекомендация руководству и другим пользователям
+        thankful: Поблагодарить сотрудников компании
+        recommended: Рекомендовать другим пользователям
+        category: Статус
+        name: Заголовок отзыва
+        company_name: Компания
+        company: Компания
+        fairness: Порядочность
+        quality: Качество товаров (работ, услуг)
+        payments: Условия оплаты/доставки
+        service: Уровень обслуживания покупателей/поставщиков
+        stability: Надежность/стабильность компании
+        created_at: Время создания
+        status: Статус
+        terms_of_use_confirmed: Подтверждение пользовательского соглашения
+        user: Автор
+      purchase_price:
+        name: Название
+        company: Компания
+        company_name: Компания
+        status: Статус
+        user: Автор
+        kind: Тип
+        quantity: Количество
+        unit: Единица измерения
+        value: Стоимость ($)
+        created_at: Время создания
+      publication:
+        head: Заголовок
+        annotation: Аннотация
+        link: Ссылка
+        company_name: Компания
+        company: Компания
+        date_of_publication: Дата публикации
+      faq:
+        position: Позиция
+        question: Вопрос
+        question_ru: Вопрос (рус.)
+        question_en: Вопрос (англ.)
+        question_zh_cn: Вопрос (кит.)
+        answer: Ответ
+        answer_ru: Ответ (рус.)
+        answer_en: Ответ (англ.)
+        answer_zh_cn: Ответ (кит.)
+        created_at: Создан
+        updated_at: Обновлён

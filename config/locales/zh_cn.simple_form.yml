@@ -1,0 +1,13 @@
+'zh-CN':
+  simple_form:
+    "yes": '是的'
+    "no": '没有'
+    required:
+      text: '强制性'
+      mark: '*'
+    labels:
+      defaults:
+        name: '名称'
+        name_en: '名称 (英语)'
+        name_ru: '名称 (俄语)'
+        name_zh_cn: '名称 (汉语)'

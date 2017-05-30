@@ -1,0 +1,5 @@
+<%= select_tag :locale, options_for_select([
+  ["English", "en", { data: { icon: image_path('flags/us.jpg'), url: url_for(params.permit!.merge(locale: :en))} }],
+  ["Русский", "ru", { data: { icon: image_path('flags/ru.jpg'), url: url_for(params.permit!.merge(locale: :ru))} }],
+  ["中國", "zh-CN", { data: { icon: image_path('flags/ch.jpg'), url: url_for(params.permit!.merge(locale: 'zh-cn'))} }]
+], I18n.locale ), id: 'localeSwitcher', class: 'select2-lang w-100' %>

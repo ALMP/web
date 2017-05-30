@@ -1,0 +1,51 @@
+.tooltipster-sidetip.fairpard .tooltipster-box {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.4);
+  border-radius: 0;
+}
+
+.tooltipster-sidetip.fairpard .tooltipster-content {
+  color: blue;
+  padding: 8px;
+}
+
+.tooltipster-sidetip.tooltipster-bottom {
+  .tooltipster-arrow-background {
+    border-bottom-color: white;
+  }
+}
+
+.tooltipster-sidetip.tooltipster-top {
+  .tooltipster-arrow-background {
+    border-top-color: white;
+  }
+}
+
+.tooltipster-sidetip .tooltipster-arrow-border {
+  border: 10px solid transparent;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
+  border-bottom-color: rgba(0, 0, 0, 0.125);
+  top: 1px;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+  border-bottom-color: rgba(0, 0, 0, 0.125);
+  bottom: 1px;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow {
+  top: -1px;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow {
+  bottom: -1px;
+}
+.review {
+  .tooltipster-sidetip {
+    .tooltipster-arrow {
+      left: 4.5em !important;
+    }
+  }
+}

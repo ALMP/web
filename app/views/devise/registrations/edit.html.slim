@@ -1,0 +1,20 @@
+.container
+  .row
+    .col-sm-6.offset-2
+      h1.text-center = t('.title')
+      = simple_form_for resource, as: resource_name, url: registration_path(resource_name), wrapper: 'vertical_pull_right_form' do |f|
+        = f.input :email, autofocus: true, as: :email
+        = f.input :password, autocomplete: 'off'
+        = f.input :current_password, autocomplete: 'off'
+        = f.input :recommendator, autocomplete: 'off', as: :email
+        .form-group.row.font-weight-bold
+          = f.label :social_networks, User.human_attribute_name(:social_networks), class: 'col-5 col-from-label text-right'
+          .col-7.oauth
+            = oauth_providers resource.oauth_identities
+
+        .form-actions.pull-right
+          = f.submit t('.update'), class: 'btn btn-action'
+
+  .links.row
+    .col-sm-6.offset-2.text-right
+      = render 'devise/shared/links'

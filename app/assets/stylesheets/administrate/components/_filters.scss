@@ -1,0 +1,52 @@
+.filters {
+  @include padding(null $base-spacing);
+  align-items: center;
+  border-bottom: $base-border;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+
+	.container {
+		@include outer-container;
+    max-width: 100%;
+	}
+ 
+  .wrapper {
+    width: 100%;
+  }
+
+	.actions {
+		text-align: right;
+		padding: $base-font-size 0;
+		a, button {
+			margin-right: $base-font-size;
+		}
+	}
+	.header {
+		font-size: 1.2rem;
+		padding: $base-font-size 0;
+		font-weight: bold;
+	}
+
+	fieldset {
+		@include span-columns(4);
+		padding-right: flex-gutter(12);
+		border-right: $base-border;
+
+		&:last-child {
+			border-right: 0;
+			padding-right: 0
+		
+		}
+
+		.label {
+			@include span-columns(5);
+		}
+
+		.field {
+			@include span-columns(7);
+		}
+	}
+}

@@ -1,0 +1,13 @@
+hr.full
+= content_tag_for :div, publication, class: 'media-block' do
+  .media-body
+          h2.m-0.p-0= publication.head
+          strong= Publication.human_attribute_name(:link)
+          br
+          a.link href= publication.link = publication.link
+          br
+          strong= Publication.human_attribute_name(:annotation)
+          p.annotation= publication.annotation
+          strong= Publication.human_attribute_name(:date_of_publication)
+          p.date_of_publication= publication.date_of_publication
+        

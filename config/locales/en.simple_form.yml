@@ -1,0 +1,13 @@
+en:
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+    labels:
+      defaults:
+        name: 'Name'
+        name_en: 'Name (en)'
+        name_ru: 'Name (ru)'
+        name_zh_cn: 'Name (zh-cn)'

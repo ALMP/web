@@ -1,0 +1,17 @@
+.container
+  .row
+    .col-sm-6.offset-2
+      h1.text-center = t('.login')
+      = simple_form_for resource, as: resource_name, url: session_path(resource_name), wrapper: 'vertical_pull_right_form' do |f|
+        = f.input :email, autofocus: true, as: :email, required: false
+        = f.input :password, autocomplete: 'off'
+        .row
+          .col-7.offset-5
+            = f.input :remember_me, as: :boolean, inline_label: true, label: false, wrapper_html: { data: { inline: true }, class: 'font-weight-bold' }, required: false, input_html: { class: 'mr-1' }
+
+        .form-actions.pull-right
+          = f.submit t('.login'), class: 'btn btn-action'
+
+  .links.row
+    .col-sm-6.offset-2.text-right
+      = render 'devise/shared/links'

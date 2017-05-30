@@ -1,0 +1,33 @@
+= content_tag_for :div, @company, class: 'container' do
+  .row
+    .col-sm-12
+      .row
+        .col-sm-12
+          = image_tag image_path('company-background.jpg'), class: 'w-100 bar hidden-sm-down'
+        .col-sm-12
+          .card.border-top-0.border-bottom-0
+            .card-block
+              .media.title
+                .d-flex.mr-3
+                  = image_tag @presented_company.logo.url, class: 'logo fixed img-thumbnail'
+                .media-body
+                  h1.mt-0.text-warning= @presented_company.name 
+        .col-sm-12
+          .card.border-top-0
+            .card-block.pt-0
+              .pull-right
+                = link_to t('.add_a_purchase_price'), new_purchase_price_path(company_name: @company.name), class: 'btn btn-action'
+              ul.nav.nav-tabs.border-bottom-0
+                li.nav-item
+                  = link_to t('.overview_tab'), @company, class: 'nav-link'
+                li.nav-item
+                  = link_to t('.reviews_tab'), [@company, :reviews], class: 'nav-link'
+                li.nav-item
+                  = link_to t('.purchase_prices_tab'), [@company, :purchase_prices], class: 'nav-link active'
+        .col-sm-8.mt-3
+          .card
+            .card-block
+              h1.text-warning=t('.title')
+              = page_entries_info @purchase_prices, no_entries: '.no_purchase_prices'
+              = render collection: @purchase_prices, partial: 'purchase_prices/purchase_price'
+              .pull-right= paginate @purchase_prices

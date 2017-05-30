@@ -1,0 +1,62 @@
+= cache [:home, current_user_cache_prefix] do
+  - transparent = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+
+  .image-container
+    img.img-fluid.bg-image.lazy src=transparent data-src=image_path('home-bg.jpg')
+
+    .search-form-wrapper
+      .row.m-0
+        .col-md-8.offset-md-2.col-sm-8.offset-sm-2.col-lg-6.offset-lg-3
+          .jumbotron
+            h2.title= t '.title'
+            = render 'companies/search'
+
+  .container
+    .row.text-center.mt-3.mb-4
+      .col-sm-3.col-6
+        = image_tag('find-partner.png', class: "img-responsive instruction-img", alt: '')
+        br
+        span.instruction-text = t('.find_partner')
+      .col-sm-3.col-6
+        = image_tag('review-history.png', class: "img-responsive instruction-img", alt: '')
+        br
+        span.instruction-text = t('.review_history')
+      .col-sm-3.col-6
+        = image_tag('make-decision.png', class: "img-responsive instruction-img", alt: '')
+        br
+        span.instruction-text = t('.make_decision')
+      .col-sm-3.col-6
+        = image_tag('submit-review.png', class: "img-responsive instruction-img", alt: '')
+        br
+        span.instruction-text = t('.submit_review')
+
+
+  - if Review.count > 100
+    .container.companies-container
+      .row
+        .col-md-10.offset-md-1
+          .row
+            .col-sm-6
+              h5.text-warning.justify-content-center.list-group-item= t '.popular_companies'
+              ul.list-group= render collection: @popular_companies, partial: 'company'
+            .col-sm-6
+              h5.text-warning.justify-content-center.list-group-item= t '.new_companies'
+              ul.list-group= render collection: @new_companies, partial: 'company'
+
+  - if Category.any?
+    .container
+      .row.mt-4
+        .col-md-10.offset-md-1
+          .row
+            - Category.order(companies_count: :desc).each do |industry|
+              .col-sm-4
+                h5
+                  = link_to industry.name.gsub(/\u00A0/i,"").humanize, industry, class: 'text-warning'
+                  small.text-muted.ml-2= industry.companies_count
+                  ul.list-unstyled.mt-2
+                    - industry.goods.order(companies_count: :desc).limit(5).each do |good|
+                      li.text-left
+                        = link_to good.name.gsub(/\u00A0/i, "").humanize, good
+                        small.text-muted.ml-2= good.companies_count
+                    li
+                      = link_to t('.all_goods'), category_goods_path(industry)

@@ -1,0 +1,54 @@
+body.users-registrations,
+body.users-sessions,
+body.users-passwords {
+  h1 {
+    padding-bottom: 5rem;
+  }
+  .links {
+    padding-top: 3rem;
+  }
+}
+.oauth {
+  margin-top: -.75rem;
+  font-size: 2em;
+
+  a {
+    color: #292b2c;
+  }
+
+  a.vk {
+    color: #45668e;
+
+    &:hover {
+      color: lighten(#45668e, 20%);
+    }
+  }
+
+  a.fb {
+    color: #3b5998;
+
+    &:hover {
+      color: lighten(#3b5998, 20%);
+    }
+  }
+
+  a.twitter {
+    color: #00aced;
+
+    &:hover {
+      color: lighten(#00aced, 20%);
+    }
+  }
+
+  a.weibo {
+    color: rgb(228, 48, 55);
+
+    &:hover {
+      color: lighten(rgb(228, 48, 55), 20%);
+    }
+  }
+
+  i {
+    padding-right: .5em;
+  }
+}
